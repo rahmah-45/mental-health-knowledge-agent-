@@ -1,0 +1,225 @@
+{
+  "project": "Examination 3: Evidence-Grounded Mental Health Knowledge and Psychoeducation Agent",
+  "evaluation_date": "2026-11-13",
+  "execution_mode": "Real run_agent / LangGraph, local Qwen, existing Chroma database; no mocks, ingestion, or rebuild",
+  "per_scenario_timeout_seconds": 90,
+  "scenarios": [
+    {
+      "id": "multiple_documents",
+      "question": "How can adequate sleep support emotional well-being, and what effects can long-term stress have on mental health?",
+      "execution_status": "timed_out",
+      "question_classification": "IN_SCOPE",
+      "retrieved_sources": [
+        {"source_id": "CDC_009", "title": "Managing Stress", "page": 2, "relevance": "RELEVANT"},
+        {"source_id": "CDC_008", "title": "About Sleep", "page": 1, "relevance": "PARTIALLY_RELEVANT"},
+        {"source_id": "CDC_008", "title": "About Sleep", "page": 2, "relevance": "IRRELEVANT"},
+        {"source_id": "CDC_009", "title": "Managing Stress", "page": 3, "relevance": "RELEVANT"},
+        {"source_id": "CDC_006", "title": "About Mental Health", "page": 4, "relevance": "PARTIALLY_RELEVANT"},
+        {"source_id": "CDC_009", "title": "Managing Stress", "page": 1, "relevance": "RELEVANT"},
+        {"source_id": "CDC_009", "title": "Managing Stress", "page": 1, "relevance": "PARTIALLY_RELEVANT"},
+        {"source_id": "CDC_006", "title": "About Mental Health", "page": 2, "relevance": "PARTIALLY_RELEVANT"},
+        {"source_id": "WHO_001", "title": "Mental Health", "page": 2, "relevance": "PARTIALLY_RELEVANT"},
+        {"source_id": "CDC_006", "title": "About Mental Health", "page": 1, "relevance": "PARTIALLY_RELEVANT"}
+      ],
+      "relevant_sources": [
+        {"source_id": "CDC_009", "title": "Managing Stress", "page": 2, "relevance": "RELEVANT"},
+        {"source_id": "CDC_008", "title": "About Sleep", "page": 1, "relevance": "PARTIALLY_RELEVANT"},
+        {"source_id": "CDC_009", "title": "Managing Stress", "page": 3, "relevance": "RELEVANT"},
+        {"source_id": "CDC_006", "title": "About Mental Health", "page": 4, "relevance": "PARTIALLY_RELEVANT"},
+        {"source_id": "CDC_009", "title": "Managing Stress", "page": 1, "relevance": "RELEVANT"},
+        {"source_id": "CDC_009", "title": "Managing Stress", "page": 1, "relevance": "PARTIALLY_RELEVANT"},
+        {"source_id": "CDC_006", "title": "About Mental Health", "page": 2, "relevance": "PARTIALLY_RELEVANT"},
+        {"source_id": "WHO_001", "title": "Mental Health", "page": 2, "relevance": "PARTIALLY_RELEVANT"},
+        {"source_id": "CDC_006", "title": "About Mental Health", "page": 1, "relevance": "PARTIALLY_RELEVANT"}
+      ],
+      "final_answer": null,
+      "citations": [],
+      "validation_citations": [],
+      "validation_status": "NOT_RUN",
+      "validation_notes": "Timed out during answer generation after retrieval and relevance assessment; no final answer was validated.",
+      "retry_count": 0,
+      "human_review_required": false,
+      "human_review_status": "NOT_REQUIRED",
+      "failure": "Scenario exceeded 90 seconds; worker was terminated.",
+      "partial_stdout": "\n[Node 0] Question classification: IN_SCOPE\n\n[Node 1] Retrieving evidence...\nLoading embedding model and LangChain Chroma retriever...\nLoading Qwen relevance model...\nRelevance model loaded successfully.\nSearch query: How can adequate sleep support emotional well-being, and what effects can long-term stress have on mental health?\nRetrieved documents: 10\n\n[Node 2] Assessing evidence relevance...\n\nAssessing: CDC_009 | Page: 2\nMatching keywords: ['being', 'emotional', 'sleep', 'well']\nAssessment: RELEVANT\n\nAssessing: CDC_008 | Page: 1\nMatching keywords: ['being', 'emotional', 'sleep', 'well']\nQwen rejected the passage, but direct evidence supports a partial match.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: CDC_008 | Page: 2\nMatching keywords: ['sleep']\nAssessment: IRRELEVANT\n\nAssessing: CDC_009 | Page: 3\nMatching keywords: ['being', 'emotional', 'support', 'well']\nAssessment: RELEVANT\n\nAssessing: CDC_006 | Page: 4\nMatching keywords: ['being', 'emotional', 'well']\nQwen rejected the passage, but direct evidence supports a partial match.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: CDC_009 | Page: 1\nMatching keywords: ['health', 'long', 'mental', 'stres', 'term']\nAssessment: RELEVANT\n\nAssessing: CDC_009 | Page: 1\nMatching keywords: ['health', 'long', 'stres', 'term']\nQwen rejected the passage, but direct evidence supports a partial match.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: CDC_006 | Page: 2\nMatching keywords: ['health', 'mental']\nQwen rejected the passage, but direct evidence supports a partial match.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: WHO_001 | Page: 2\nMatching keywords: ['health', 'mental']\nQwen rejected the passage, but direct evidence supports a partial match.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: CDC_006 | Page: 1\nMatching keywords: ['health', 'long', 'mental']\nQwen rejected the passage, but direct evidence supports a partial match.\nAssessment: PARTIALLY_RELEVANT\nFully relevant: 3\nPartially relevant: 6\nEvidence available: True\n\n[Node 3] Generating evidence-grounded answer...\nLoading answer generation model...\nAnswer model loaded successfully.\n",
+      "partial_stderr": "tal_Health_Agent_V2\\.venv\\lib\\site-packages\\langgraph\\checkpoint\\base\\__init__.py:18: LangChainPendingDeprecationWarning: The default value of `allowed_objects` will change in a future version. Pass an explicit value (e.g., allowed_objects='messages' or allowed_objects='core') to suppress this warning.\n  from langgraph.checkpoint.serde.jsonplus import JsonPlusSerializer\nSliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.\nDevice set to use cpu\nC:\\Users\\PC\\Documents\\Mental_Health_Agent_V2\\answer_generator.py:99: LangChainDeprecationWarning: The class `HuggingFacePipeline` was deprecated in LangChain 0.0.37 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-huggingface package and should be used instead. To use it run `pip install -U :class:`~langchain-huggingface` and import as `from :class:`~langchain_huggingface import HuggingFacePipeline``.\n  _LANGCHAIN_LLM = HuggingFacePipeline(pipeline=text_pipeline)\nC:\\Users\\PC\\Documents\\Mental_Health_Agent_V2\\.venv\\lib\\site-packages\\transformers\\generation\\configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.\n  warnings.warn(\nC:\\Users\\PC\\Documents\\Mental_Health_Agent_V2\\.venv\\lib\\site-packages\\transformers\\generation\\configuration_utils.py:636: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.\n  warnings.warn(\nC:\\Users\\PC\\Documents\\Mental_Health_Agent_V2\\.venv\\lib\\site-packages\\transformers\\generation\\configuration_utils.py:653: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.\n  warnings.warn(\n",
+      "result": "PARTIAL"
+    },
+    {
+      "id": "initially_irrelevant_retrieval",
+      "question": "What is the latitude of anxiety?",
+      "execution_status": "completed",
+      "return_code": 0,
+      "question_classification": "IN_SCOPE",
+      "retrieved_sources": [
+        {
+          "source_id": "WHO_002",
+          "title": "Anxiety Disorders",
+          "page": 1,
+          "relevance": "IRRELEVANT",
+          "text": "and worry that is both intense and excessive. These feelings are typically accompanied by\nphysical tension and other behavioural and cognitive symptoms. They are difficult to control,\ncause significant distress and can last a long time if untreated. Anxiety disorders interfere with\ndaily activities and can impair a person’s family, social and school or working life.\nAn estimated 5.8% of the global population currently experience an anxiety disorder (1). In\n2023, 470 million people in the world had an anxiety disorder, making anxiety disorders the\nmost common of all mental disorders (1)."
+        },
+        {
+          "source_id": "WHO_002",
+          "title": "Anxiety Disorders",
+          "page": 2,
+          "relevance": "IRRELEVANT",
+          "text": "disorder, about a broad range of everyday situations. They typically experience these\nsymptoms over an extended period – at least several months. Usually they avoid the situations\nthat make them anxious.\nOther symptoms of anxiety disorders may include:\ntrouble concentrating or making decisions\nfeeling irritable, tense or restless\nexperiencing nausea or abdominal distress\nhaving heart palpitations\nsweating, trembling or shaking\ntrouble sleeping\nhaving a sense of impending danger, panic or doom.\nAnxiety disorders increase the risk for depression and substance use disorders as well as the\nrisk of suicidal thoughts and behaviours."
+        },
+        {
+          "source_id": "WHO_002",
+          "title": "Anxiety Disorders",
+          "page": 1,
+          "relevance": "IRRELEVANT",
+          "text": "Anxiety disorders\n15 September 2026 Reading time: 4 min (1206 words)|\nKey facts\nAnxiety disorders are the world’s most common mental disorders, affecting 470 million people in 2023.\nMore women are affected by anxiety disorders than men.\nSymptoms of anxiety often have onset during childhood or adolescence.\nThere are highly effective treatments for anxiety disorders.\nApproximately 1 in 4 people with anxiety disorders receive treatment for this condition.\nOverview\nEveryone can feel anxious sometimes, but people with anxiety disorders often experience fear\nand worry that is both intense and excessive. These feelings are typically accompanied by"
+        },
+        {
+          "source_id": "WHO_002",
+          "title": "Anxiety Disorders",
+          "page": 3,
+          "relevance": "IRRELEVANT",
+          "text": "people learn new ways of thinking, coping or relating to their anxiety, to others or to the\nworld. They can teach people how to face the situations, events, people or places that trigger\ntheir anxiety.\nPsychological interventions can be provided to individuals or groups, in person or online. They\nmay also be accessed through self-help manuals, websites and apps. The psychological\ninterventions with the most evidence for treating a range of anxiety disorders are those based\non principles of cognitive-behavioural therapy. These include exposure therapy, during which\npeople learn to face their fears."
+        },
+        {
+          "source_id": "WHO_003",
+          "title": "Doing What Matters in Times of Stress: An Illustrated Guide",
+          "page": 96,
+          "relevance": "IRRELEVANT",
+          "text": "94\nAnd ENGAGE with the world around you.\n53I\nSEE\nTASTE\nSMELL\nHEAR\nTOUCH\nNOTICE and NAME them.\n53H\nI notice here is a\npainful feeling in\nmy belly.\nI notice here is a\ndifficult thought that\nit is all too hard.\nIf so, you know what to do.\n53G\nIt is too\nhard!\nThere is\nno point!\nIt will\nnot work\nFears\nPart 3: ACTING ON YOUR VALUES"
+        }
+      ],
+      "relevant_sources": [],
+      "final_answer": "I could not find sufficient evidence in the available knowledge base to answer this question. Please consult a qualified professional or a reliable source for further information.",
+      "citations": [],
+      "validation_citations": [],
+      "validation_status": "NOT_RUN",
+      "validation_notes": "The available knowledge base did not provide sufficient evidence after corrective retrieval.",
+      "answer_supported": false,
+      "evidence_gaps": [
+        "No relevant retrieved evidence was found for the requested part: What is the latitude of anxiety"
+      ],
+      "question_parts": [
+        "What is the latitude of anxiety"
+      ],
+      "question_part_coverage": [],
+      "retry_count": 1,
+      "human_review_required": false,
+      "human_review_status": "NOT_REQUIRED",
+      "human_review_reason": "",
+      "execution_interrupted": false,
+      "console_output": "\n[Node 0] Question classification: IN_SCOPE\n\n[Node 1] Retrieving evidence...\nLoading embedding model and LangChain Chroma retriever...\nLoading Qwen relevance model...\nRelevance model loaded successfully.\nSearch query: What is the latitude of anxiety?\nRetrieved documents: 5\n\n[Node 2] Assessing evidence relevance...\n\nAssessing: WHO_002 | Page: 1\nMatching keywords: ['anxiety']\nAssessment: IRRELEVANT\n\nAssessing: WHO_002 | Page: 2\nMatching keywords: ['anxiety']\nAssessment: IRRELEVANT\n\nAssessing: WHO_002 | Page: 1\nMatching keywords: ['anxiety']\nAssessment: IRRELEVANT\n\nAssessing: WHO_002 | Page: 3\nMatching keywords: ['anxiety']\nAssessment: IRRELEVANT\n\nAssessing: WHO_003 | Page: 96\nMatching keywords: []\nAssessment: IRRELEVANT\nFully relevant: 0\nPartially relevant: 0\nEvidence available: False\n\n[Corrective Retrieval] Starting...\nOriginal question: What is the latitude of anxiety?\nUnsupported claims: []\nCorrected query: What is the latitude of anxiety?\nCorrective retrieval results: 5\n\n[Node 2] Assessing evidence relevance...\n\nAssessing: WHO_002 | Page: 1\nMatching keywords: ['anxiety']\nAssessment: IRRELEVANT\n\nAssessing: WHO_002 | Page: 2\nMatching keywords: ['anxiety']\nAssessment: IRRELEVANT\n\nAssessing: WHO_002 | Page: 1\nMatching keywords: ['anxiety']\nAssessment: IRRELEVANT\n\nAssessing: WHO_002 | Page: 3\nMatching keywords: ['anxiety']\nAssessment: IRRELEVANT\n\nAssessing: WHO_003 | Page: 96\nMatching keywords: []\nAssessment: IRRELEVANT\nFully relevant: 0\nPartially relevant: 0\nEvidence available: False\n\n[Node] Insufficient evidence. Abstaining.",
+      "stderr": "C:\\Users\\PC\\Documents\\Mental_Health_Agent_V2\\.venv\\lib\\site-packages\\langgraph\\checkpoint\\base\\__init__.py:18: LangChainPendingDeprecationWarning: The default value of `allowed_objects` will change in a future version. Pass an explicit value (e.g., allowed_objects='messages' or allowed_objects='core') to suppress this warning.\n  from langgraph.checkpoint.serde.jsonplus import JsonPlusSerializer\nSliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.\n",
+      "result": "PARTIAL"
+    },
+    {
+      "id": "insufficient_evidence",
+      "question": "What percentage of people in Pakistan have an anxiety disorder?",
+      "execution_status": "completed",
+      "return_code": 0,
+      "question_classification": "IN_SCOPE",
+      "retrieved_sources": [
+        {
+          "source_id": "WHO_002",
+          "title": "Anxiety Disorders",
+          "page": 1,
+          "relevance": "PARTIALLY_RELEVANT",
+          "text": "Anxiety disorders\n15 September 2026 Reading time: 4 min (1206 words)|\nKey facts\nAnxiety disorders are the world’s most common mental disorders, affecting 470 million people in 2023.\nMore women are affected by anxiety disorders than men.\nSymptoms of anxiety often have onset during childhood or adolescence.\nThere are highly effective treatments for anxiety disorders.\nApproximately 1 in 4 people with anxiety disorders receive treatment for this condition.\nOverview\nEveryone can feel anxious sometimes, but people with anxiety disorders often experience fear\nand worry that is both intense and excessive. These feelings are typically accompanied by"
+        },
+        {
+          "source_id": "WHO_002",
+          "title": "Anxiety Disorders",
+          "page": 2,
+          "relevance": "PARTIALLY_RELEVANT",
+          "text": "Although highly effective treatments for anxiety disorders exist, only about 1 in 4 people in\nneed (27.6%) receive any treatment (2). Barriers to care include lack of awareness that this is a\ntreatable health condition, lack of investment in mental health services, lack of trained health-\ncare providers, and social stigma.\nSymptoms and patterns\nPeople with an anxiety disorder may experience excessive fear or worry about a specific\nsituation (for example, a panic attack or social situation) or, in the case of generalized anxiety\ndisorder, about a broad range of everyday situations. They typically experience these"
+        },
+        {
+          "source_id": "WHO_002",
+          "title": "Anxiety Disorders",
+          "page": 1,
+          "relevance": "RELEVANT",
+          "text": "and worry that is both intense and excessive. These feelings are typically accompanied by\nphysical tension and other behavioural and cognitive symptoms. They are difficult to control,\ncause significant distress and can last a long time if untreated. Anxiety disorders interfere with\ndaily activities and can impair a person’s family, social and school or working life.\nAn estimated 5.8% of the global population currently experience an anxiety disorder (1). In\n2023, 470 million people in the world had an anxiety disorder, making anxiety disorders the\nmost common of all mental disorders (1)."
+        },
+        {
+          "source_id": "WHO_010",
+          "title": "Mental Health of Adolescents",
+          "page": 2,
+          "relevance": "PARTIALLY_RELEVANT",
+          "text": "illness, autism spectrum disorder, an intellectual disability or other neurological condition;\npregnant adolescents, adolescent parents, or those in early or forced marriages; orphans; and\nadolescents from minority ethnic or sexual backgrounds or other discriminated groups.\nEmotional disorders\nEmotional disorders are common among adolescents. Anxiety disorders (which may involve\npanic or excessive worry) are the most prevalent in this age group and are more common\namong older than among younger adolescents. It is estimated that 4.1% of 10–14-year-olds\nand 5.3% of 15–19-year-olds experience an anxiety disorder (1). Depression is estimated to"
+        },
+        {
+          "source_id": "WHO_010",
+          "title": "Mental Health of Adolescents",
+          "page": 2,
+          "relevance": "PARTIALLY_RELEVANT",
+          "text": "and 5.3% of 15–19-year-olds experience an anxiety disorder (1). Depression is estimated to\noccur among 1.3% of adolescents aged 10–14 years, and 3.4% of 15–19-year-olds (1).\nDepression and anxiety share some of the same symptoms, including rapid and unexpected\nchanges in mood."
+        }
+      ],
+      "relevant_sources": [
+        {
+          "source_id": "WHO_002",
+          "title": "Anxiety Disorders",
+          "page": 1,
+          "relevance": "RELEVANT",
+          "text": "and worry that is both intense and excessive. These feelings are typically accompanied by\nphysical tension and other behavioural and cognitive symptoms. They are difficult to control,\ncause significant distress and can last a long time if untreated. Anxiety disorders interfere with\ndaily activities and can impair a person’s family, social and school or working life.\nAn estimated 5.8% of the global population currently experience an anxiety disorder (1). In\n2023, 470 million people in the world had an anxiety disorder, making anxiety disorders the\nmost common of all mental disorders (1)."
+        }
+      ],
+      "final_answer": "I could not find sufficient evidence in the available knowledge base to answer this question. Please consult a qualified professional or a reliable source for further information.",
+      "citations": [],
+      "validation_citations": [
+        {
+          "source_id": "WHO_002",
+          "page": "1"
+        }
+      ],
+      "validation_status": "NOT_SUPPORTED",
+      "validation_notes": "The retrieved evidence did not match the requested geographic or population scope.",
+      "answer_supported": false,
+      "evidence_gaps": [
+        "Geographic scope mismatch: Pakistan-specific prevalence data was not found; the retrieved evidence reports global statistics."
+      ],
+      "question_parts": [
+        "What percentage of people in Pakistan have an anxiety disorder"
+      ],
+      "question_part_coverage": [
+        {
+          "part": "What percentage of people in Pakistan have an anxiety disorder",
+          "supported": true
+        }
+      ],
+      "retry_count": 0,
+      "human_review_required": false,
+      "human_review_status": "NOT_REQUIRED",
+      "human_review_reason": "",
+      "execution_interrupted": false,
+      "console_output": "\n[Node 0] Question classification: IN_SCOPE\n\n[Node 1] Retrieving evidence...\nLoading embedding model and LangChain Chroma retriever...\nLoading Qwen relevance model...\nRelevance model loaded successfully.\nSearch query: What percentage of people in Pakistan have an anxiety disorder?\nRetrieved documents: 5\n\n[Node 2] Assessing evidence relevance...\n\nAssessing: WHO_002 | Page: 1\nMatching keywords: ['anxiety', 'disorder', 'people']\nQwen rejected the passage, but direct evidence supports a partial match.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: WHO_002 | Page: 2\nMatching keywords: ['anxiety', 'disorder', 'people']\nQwen rejected the passage, but direct evidence supports a partial match.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: WHO_002 | Page: 1\nMatching keywords: ['anxiety', 'disorder', 'people']\nAssessment: RELEVANT\n\nAssessing: WHO_010 | Page: 2\nMatching keywords: ['anxiety', 'disorder']\nQwen rejected the passage, but direct evidence supports a partial match.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: WHO_010 | Page: 2\nMatching keywords: ['anxiety', 'disorder']\nQwen rejected the passage, but direct evidence supports a partial match.\nAssessment: PARTIALLY_RELEVANT\nFully relevant: 1\nPartially relevant: 4\nEvidence available: True\n\n[Node 3] Generating evidence-grounded answer...\nLoading answer generation model...\nAnswer model loaded successfully.\nRaw model draft: The available evidence indicates that approximately 5.8% of the global population experiences an anxiety disorder according to WHO data from 2023.\n\nNo supported sentences were generated.\nUnsupported statements:\n- The available evidence indicates that approximately 5.8% of the global population experiences an anxiety disorder according to WHO data from 2023.\nReturning exact evidence excerpts with source citations.\nAnswer generated.\n\n[Node 4] Validating answer...\n\n[Validation Debug]\nNumber of claims: 1\nAll claims supported: True\nCitations valid: True\nCitation: True | Valid: True | Claim supported: True\nValidation status: NOT_SUPPORTED\nValidation notes: Geographic scope mismatch: Pakistan-specific prevalence data was not found; the retrieved evidence reports global statistics.\n\nClaim-by-claim validation:\n\nClaim 1:\nText: Anxiety disorders interfere with daily activities and can impair a person’s family, social and school or working life. [WHO_002, Page 1]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: WHO_002\nBest evidence page: 1\nHas citation: True\nValid citation: True\n\nUnsupported claims: []\n\n[Decision] Retrieved evidence does not match the requested scope. Abstaining...\n\n[Node] Insufficient evidence. Abstaining.",
+      "stderr": "C:\\Users\\PC\\Documents\\Mental_Health_Agent_V2\\.venv\\lib\\site-packages\\langgraph\\checkpoint\\base\\__init__.py:18: LangChainPendingDeprecationWarning: The default value of `allowed_objects` will change in a future version. Pass an explicit value (e.g., allowed_objects='messages' or allowed_objects='core') to suppress this warning.\n  from langgraph.checkpoint.serde.jsonplus import JsonPlusSerializer\nSliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.\nDevice set to use cpu\nC:\\Users\\PC\\Documents\\Mental_Health_Agent_V2\\answer_generator.py:99: LangChainDeprecationWarning: The class `HuggingFacePipeline` was deprecated in LangChain 0.0.37 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-huggingface package and should be used instead. To use it run `pip install -U :class:`~langchain-huggingface` and import as `from :class:`~langchain_huggingface import HuggingFacePipeline``.\n  _LANGCHAIN_LLM = HuggingFacePipeline(pipeline=text_pipeline)\nC:\\Users\\PC\\Documents\\Mental_Health_Agent_V2\\.venv\\lib\\site-packages\\transformers\\generation\\configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.\n  warnings.warn(\nC:\\Users\\PC\\Documents\\Mental_Health_Agent_V2\\.venv\\lib\\site-packages\\transformers\\generation\\configuration_utils.py:636: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.\n  warnings.warn(\nC:\\Users\\PC\\Documents\\Mental_Health_Agent_V2\\.venv\\lib\\site-packages\\transformers\\generation\\configuration_utils.py:653: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.\n  warnings.warn(\n",
+      "result": "PASS"
+    },
+    {
+      "id": "out_of_scope",
+      "question": "What is the current population of Islamabad?",
+      "execution_status": "completed",
+      "return_code": 0,
+      "question_classification": "OUT_OF_SCOPE",
+      "retrieved_sources": [],
+      "relevant_sources": [],
+      "final_answer": "This question is outside the mental health education topics covered by the available knowledge base.",
+      "citations": [],
+      "validation_citations": [],
+      "validation_status": "NOT_RUN",
+      "validation_notes": "",
+      "answer_supported": false,
+      "evidence_gaps": [],
+      "question_parts": [],
+      "question_part_coverage": [],
+      "retry_count": 0,
+      "human_review_required": false,
+      "human_review_status": "NOT_REQUIRED",
+      "human_review_reason": "",
+      "execution_interrupted": false,
+      "console_output": "\n[Node 0] Question classification: OUT_OF_SCOPE",
+      "stderr": "C:\\Users\\PC\\Documents\\Mental_Health_Agent_V2\\.venv\\lib\\site-packages\\langgraph\\checkpoint\\base\\__init__.py:18: LangChainPendingDeprecationWarning: The default value of `allowed_objects` will change in a future version. Pass an explicit value (e.g., allowed_objects='messages' or allowed_objects='core') to suppress this warning.\n  from langgraph.checkpoint.serde.jsonplus import JsonPlusSerializer\n",
+      "result": "PASS"
+    }
+  ]
+}

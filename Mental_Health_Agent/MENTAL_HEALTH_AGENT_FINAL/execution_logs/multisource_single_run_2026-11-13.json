@@ -1,0 +1,310 @@
+{
+  "question": "How does good sleep support emotional well-being, and what are the effects of long-term stress on health?",
+  "execution_status": "TIMEOUT",
+  "scenario_status": "PARTIAL",
+  "elapsed_seconds": 180.234,
+  "stopped_at_stage": "generation",
+  "stage_timings_seconds": {
+    "retrieval_setup": 5.016,
+    "question_split": 0.0,
+    "retrieval": 0.578,
+    "relevance_assessment": 99.812,
+    "model_setup": 8.688,
+    "generation": 37.844,
+    "validation": 0.015
+  },
+  "stage_call_timings_seconds": {
+    "retrieval_setup": [
+      5.0,
+      0.016,
+      0.0,
+      0.0
+    ],
+    "question_split": [
+      0.0,
+      0.0
+    ],
+    "retrieval": [
+      0.343,
+      0.016,
+      0.188,
+      0.031
+    ],
+    "relevance_assessment": [
+      16.25,
+      15.093,
+      45.422,
+      23.047
+    ],
+    "model_setup": [
+      8.672,
+      0.016
+    ],
+    "generation": [
+      37.844
+    ],
+    "validation": [
+      0.015
+    ]
+  },
+  "result": null,
+  "checks": {},
+  "process_error": null,
+  "stdout_tail": "",
+  "stderr_tail": "C:\\Users\\PC\\Documents\\Mental_Health_Agent_V2\\.venv\\lib\\site-packages\\langgraph\\checkpoint\\base\\__init__.py:18: LangChainPendingDeprecationWarning: The default value of `allowed_objects` will change in a future version. Pass an explicit value (e.g., allowed_objects='messages' or allowed_objects='core') to suppress this warning.\n  from langgraph.checkpoint.serde.jsonplus import JsonPlusSerializer\nSliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.\nDevice set to use cpu\nC:\\Users\\PC\\Documents\\Mental_Health_Agent_V2\\answer_generator.py:101: LangChainDeprecationWarning: The class `HuggingFacePipeline` was deprecated in LangChain 0.0.37 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-huggingface package and should be used instead. To use it run `pip install -U :class:`~langchain-huggingface` and import as `from :class:`~langchain_huggingface import HuggingFacePipeline``.\n  _LANGCHAIN_LLM = HuggingFacePipeline(pipeline=text_pipeline)\nC:\\Users\\PC\\Documents\\Mental_Health_Agent_V2\\.venv\\lib\\site-packages\\transformers\\generation\\configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.\n  warnings.warn(\nC:\\Users\\PC\\Documents\\Mental_Health_Agent_V2\\.venv\\lib\\site-packages\\transformers\\generation\\configuration_utils.py:636: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.\n  warnings.warn(\nC:\\Users\\PC\\Documents\\Mental_Health_Agent_V2\\.venv\\lib\\site-packages\\transformers\\generation\\configuration_utils.py:653: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.\n  warnings.warn(\nC:\\Users\\PC\\Documents\\Mental_Health_Agent_V2\\.venv\\lib\\site-packages\\transformers\\generation\\configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.\n  warnings.warn(\nC:\\Users\\PC\\Documents\\Mental_Health_Agent_V2\\.venv\\lib\\site-packages\\transformers\\generation\\configuration_utils.py:636: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.\n  warnings.warn(\nC:\\Users\\PC\\Documents\\Mental_Health_Agent_V2\\.venv\\lib\\site-packages\\transformers\\generation\\configuration_utils.py:653: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.\n  warnings.warn(\n",
+  "timing_events": [
+    {
+      "stage": "workflow",
+      "phase": "start",
+      "elapsed_seconds": null,
+      "at_seconds": 0.0
+    },
+    {
+      "stage": "retrieval_setup",
+      "phase": "start",
+      "elapsed_seconds": null,
+      "at_seconds": 0.016
+    },
+    {
+      "stage": "retrieval_setup",
+      "phase": "end",
+      "elapsed_seconds": 5.0,
+      "at_seconds": 5.016
+    },
+    {
+      "stage": "question_split",
+      "phase": "start",
+      "elapsed_seconds": null,
+      "at_seconds": 5.016
+    },
+    {
+      "stage": "question_split",
+      "phase": "end",
+      "elapsed_seconds": 0.0,
+      "at_seconds": 5.016
+    },
+    {
+      "stage": "retrieval",
+      "phase": "start",
+      "elapsed_seconds": null,
+      "at_seconds": 5.016
+    },
+    {
+      "stage": "retrieval",
+      "phase": "end",
+      "elapsed_seconds": 0.343,
+      "at_seconds": 5.359
+    },
+    {
+      "stage": "retrieval",
+      "phase": "start",
+      "elapsed_seconds": null,
+      "at_seconds": 5.359
+    },
+    {
+      "stage": "retrieval",
+      "phase": "end",
+      "elapsed_seconds": 0.016,
+      "at_seconds": 5.375
+    },
+    {
+      "stage": "retrieval_setup",
+      "phase": "start",
+      "elapsed_seconds": null,
+      "at_seconds": 5.375
+    },
+    {
+      "stage": "retrieval_setup",
+      "phase": "end",
+      "elapsed_seconds": 0.016,
+      "at_seconds": 5.391
+    },
+    {
+      "stage": "relevance_assessment",
+      "phase": "start",
+      "elapsed_seconds": null,
+      "at_seconds": 5.391
+    },
+    {
+      "stage": "relevance_assessment",
+      "phase": "end",
+      "elapsed_seconds": 16.25,
+      "at_seconds": 21.641
+    },
+    {
+      "stage": "relevance_assessment",
+      "phase": "start",
+      "elapsed_seconds": null,
+      "at_seconds": 21.641
+    },
+    {
+      "stage": "relevance_assessment",
+      "phase": "end",
+      "elapsed_seconds": 15.093,
+      "at_seconds": 36.734
+    },
+    {
+      "stage": "model_setup",
+      "phase": "start",
+      "elapsed_seconds": null,
+      "at_seconds": 36.734
+    },
+    {
+      "stage": "model_setup",
+      "phase": "end",
+      "elapsed_seconds": 8.672,
+      "at_seconds": 45.406
+    },
+    {
+      "stage": "generation",
+      "phase": "start",
+      "elapsed_seconds": null,
+      "at_seconds": 45.406
+    },
+    {
+      "stage": "generation",
+      "phase": "end",
+      "elapsed_seconds": 37.844,
+      "at_seconds": 83.25
+    },
+    {
+      "stage": "validation",
+      "phase": "start",
+      "elapsed_seconds": null,
+      "at_seconds": 83.266
+    },
+    {
+      "stage": "question_split",
+      "phase": "start",
+      "elapsed_seconds": null,
+      "at_seconds": 83.266
+    },
+    {
+      "stage": "question_split",
+      "phase": "end",
+      "elapsed_seconds": 0.0,
+      "at_seconds": 83.266
+    },
+    {
+      "stage": "validation",
+      "phase": "end",
+      "elapsed_seconds": 0.015,
+      "at_seconds": 83.281
+    },
+    {
+      "stage": "retrieval_setup",
+      "phase": "start",
+      "elapsed_seconds": null,
+      "at_seconds": 83.281
+    },
+    {
+      "stage": "retrieval_setup",
+      "phase": "end",
+      "elapsed_seconds": 0.0,
+      "at_seconds": 83.281
+    },
+    {
+      "stage": "retrieval",
+      "phase": "start",
+      "elapsed_seconds": null,
+      "at_seconds": 83.281
+    },
+    {
+      "stage": "retrieval",
+      "phase": "end",
+      "elapsed_seconds": 0.188,
+      "at_seconds": 83.469
+    },
+    {
+      "stage": "retrieval",
+      "phase": "start",
+      "elapsed_seconds": null,
+      "at_seconds": 83.469
+    },
+    {
+      "stage": "retrieval",
+      "phase": "end",
+      "elapsed_seconds": 0.031,
+      "at_seconds": 83.5
+    },
+    {
+      "stage": "retrieval_setup",
+      "phase": "start",
+      "elapsed_seconds": null,
+      "at_seconds": 83.5
+    },
+    {
+      "stage": "retrieval_setup",
+      "phase": "end",
+      "elapsed_seconds": 0.0,
+      "at_seconds": 83.5
+    },
+    {
+      "stage": "relevance_assessment",
+      "phase": "start",
+      "elapsed_seconds": null,
+      "at_seconds": 83.5
+    },
+    {
+      "stage": "relevance_assessment",
+      "phase": "end",
+      "elapsed_seconds": 45.422,
+      "at_seconds": 128.922
+    },
+    {
+      "stage": "relevance_assessment",
+      "phase": "start",
+      "elapsed_seconds": null,
+      "at_seconds": 128.969
+    },
+    {
+      "stage": "relevance_assessment",
+      "phase": "end",
+      "elapsed_seconds": 23.047,
+      "at_seconds": 152.016
+    },
+    {
+      "stage": "model_setup",
+      "phase": "start",
+      "elapsed_seconds": null,
+      "at_seconds": 152.047
+    },
+    {
+      "stage": "model_setup",
+      "phase": "end",
+      "elapsed_seconds": 0.016,
+      "at_seconds": 152.063
+    },
+    {
+      "stage": "generation",
+      "phase": "start",
+      "elapsed_seconds": null,
+      "at_seconds": 152.063
+    }
+  ],
+  "note": "Initial collector launch attempt failed before agent import because project root was absent from child sys.path; no model or graph was invoked on that setup attempt.",
+  "agent_invocation_count": 1,
+  "stage_timings_detailed": {
+    "question_split_seconds": 0.0,
+    "retrieval_seconds": 0.578,
+    "relevance_assessment_seconds": 99.812,
+    "model_setup_seconds": 8.688,
+    "first_generation_completed_seconds": 37.844,
+    "first_validation_seconds": 0.015,
+    "second_generation_interrupted_seconds": 28.171,
+    "total_generation_attempt_seconds": 66.015,
+    "total_elapsed_seconds": 180.234
+  },
+  "observed_progress": {
+    "first_validation": "Completed; workflow then entered corrective retrieval and did not finalize.",
+    "corrective_retrieval": "Started after the first validation; retrieval and relevance assessment completed.",
+    "second_generation": "Started at 152.063 seconds and was interrupted by the 180-second deadline after approximately 28.171 seconds.",
+    "final_answer": "No final run_agent state was returned. The first generated text could not be recovered from this timed-out invocation.",
+    "retrieved_source_titles_and_pages": "Not captured in a returned final state.",
+    "citations": "Not captured in a returned final state.",
+    "question_part_coverage": "Not captured in a returned final state.",
+    "human_review_status": "Not recoverable from the missing final state.",
+    "unsupported_claims": "Cannot be verified without the returned validation state or answer text."
+  },
+  "result_availability": "Agent state unavailable because the subprocess timed out before run_agent returned; final answer, source list, citations, coverage, and validation details could not be verified."
+}

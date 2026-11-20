@@ -1,0 +1,69 @@
+{
+    "chunk_size": 700,
+    "chunk_overlap": 120,
+    "total_sources": 10,
+    "successful_sources": 10,
+    "total_chunks": 431,
+    "sources": [
+        {
+            "source_id": "WHO_001",
+            "filename": "WHO_01_Mental_Health.txt",
+            "status": "processed",
+            "chunks": 14
+        },
+        {
+            "source_id": "WHO_002",
+            "filename": "WHO_02_Anxiety_Disorders.txt",
+            "status": "processed",
+            "chunks": 15
+        },
+        {
+            "source_id": "WHO_003",
+            "filename": "WHO_03_Stress_Management_Guide.txt",
+            "status": "processed",
+            "chunks": 153
+        },
+        {
+            "source_id": "NHS_004",
+            "filename": "NHS_04_Five_Steps_Mental_Wellbeing.txt",
+            "status": "processed",
+            "chunks": 12
+        },
+        {
+            "source_id": "NIMH_005",
+            "filename": "NIMH_05_Depression.txt",
+            "status": "processed",
+            "chunks": 10
+        },
+        {
+            "source_id": "CDC_006",
+            "filename": "CDC_06_About_Mental_Health.txt",
+            "status": "processed",
+            "chunks": 23
+        },
+        {
+            "source_id": "WHO_007",
+            "filename": "WHO_07_Psychological_First_Aid.txt",
+            "status": "processed",
+            "chunks": 166
+        },
+        {
+            "source_id": "CDC_008",
+            "filename": "CDC_08_About_Sleep.txt",
+            "status": "processed",
+            "chunks": 8
+        },
+        {
+            "source_id": "CDC_009",
+            "filename": "CDC_09_Managing_Stress.txt",
+            "status": "processed",
+            "chunks": 10
+        },
+        {
+            "source_id": "WHO_010",
+            "filename": "WHO_10_Adolescent_Mental_Health.txt",
+            "status": "processed",
+            "chunks": 20
+        }
+    ]
+}

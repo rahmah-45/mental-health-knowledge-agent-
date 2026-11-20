@@ -1,0 +1,114 @@
+{
+    "sources": [
+        {
+            "source_id": "WHO_001",
+            "filename": "WHO_01_Mental_Health.pdf",
+            "organization": "World Health Organization",
+            "title": "Mental Health",
+            "publication_date": "2026-09-11",
+            "document_type": "Official Fact Sheet",
+            "language": "English",
+            "url": "https://www.who.int/news-room/fact-sheets/detail/mental-health-strengthening-our-response",
+            "status": "verified_pdf_saved_and_text_extracted"
+        },
+        {
+            "source_id": "WHO_002",
+            "filename": "WHO_02_Anxiety_Disorders.pdf",
+            "organization": "World Health Organization",
+            "title": "Anxiety Disorders",
+            "publication_date": "2026-09-15",
+            "document_type": "Official Fact Sheet",
+            "language": "English",
+            "url": "https://www.who.int/news-room/fact-sheets/detail/anxiety-disorders",
+            "status": "verified_pdf_saved_and_text_extracted"
+        },
+        {
+            "source_id": "WHO_003",
+            "filename": "WHO_03_Stress_Management_Guide.pdf",
+            "organization": "World Health Organization",
+            "title": "Doing What Matters in Times of Stress: An Illustrated Guide",
+            "publication_date": "2020",
+            "document_type": "Official Illustrated Self-Help Guide",
+            "language": "English",
+            "url": "https://www.who.int/publications/i/item/9789240003927",
+            "status": "verified_pdf_saved_and_text_extracted"
+        },
+        {
+            "source_id": "NHS_004",
+            "filename": "NHS_04_Five_Steps_Mental_Wellbeing.pdf",
+            "organization": "National Health Service",
+            "title": "5 Steps to Mental Wellbeing",
+            "publication_date": null,
+            "document_type": "Official Educational Resource",
+            "language": "English",
+            "url": "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/five-steps-to-mental-wellbeing/",
+            "status": "verified_pdf_saved_and_text_extracted"
+        },
+        {
+            "source_id": "NIMH_005",
+            "filename": "NIMH_05_Depression.pdf",
+            "organization": "National Institute of Mental Health",
+            "title": "Depression",
+            "publication_date": "2024-12",
+            "document_type": "Official Educational Resource",
+            "language": "English",
+            "url": "https://www.nimh.nih.gov/health/topics/depression",
+            "status": "verified_pdf_saved_and_text_extracted_pending_cleaning"
+        },
+        {
+            "source_id": "CDC_006",
+            "filename": "CDC_06_About_Mental_Health.pdf",
+            "organization": "Centers for Disease Control and Prevention",
+            "title": "About Mental Health",
+            "publication_date": "2026-08-20",
+            "document_type": "Official Educational Resource",
+            "language": "English",
+            "url": "https://www.cdc.gov/mental-health/about/index.html",
+            "status": "verified_pdf_saved_and_text_extracted"
+        },
+        {
+            "source_id": "WHO_007",
+            "filename": "WHO_07_Psychological_First_Aid.pdf",
+            "organization": "World Health Organization",
+            "title": "Psychological First Aid: Guide for Field Workers",
+            "publication_date": "2011",
+            "document_type": "Official Psychological First Aid Guide",
+            "language": "English",
+            "url": "https://www.who.int/publications/i/item/9789241548205",
+            "status": "verified_pdf_saved_and_text_extracted"
+        },
+        {
+            "source_id": "CDC_008",
+            "filename": "CDC_08_About_Sleep.pdf",
+            "organization": "Centers for Disease Control and Prevention",
+            "title": "About Sleep",
+            "publication_date": "2024-05-15",
+            "document_type": "Official Educational Resource",
+            "language": "English",
+            "url": "https://www.cdc.gov/sleep/about/index.html",
+            "status": "verified_pdf_saved_and_text_extracted"
+        },
+        {
+            "source_id": "CDC_009",
+            "filename": "CDC_09_Managing_Stress.pdf",
+            "organization": "Centers for Disease Control and Prevention",
+            "title": "Managing Stress",
+            "publication_date": "2026-05-12",
+            "document_type": "Official Educational Resource",
+            "language": "English",
+            "url": "https://www.cdc.gov/mental-health/living-with/index.html",
+            "status": "verified_pdf_saved_and_text_extracted"
+        },
+        {
+            "source_id": "WHO_010",
+            "filename": "WHO_10_Adolescent_Mental_Health.pdf",
+            "organization": "World Health Organization",
+            "title": "Mental Health of Adolescents",
+            "publication_date": "2025-09-01",
+            "document_type": "Official Fact Sheet",
+            "language": "English",
+            "url": "https://www.who.int/news-room/fact-sheets/detail/adolescent-mental-health",
+            "status": "verified_pdf_saved_and_text_extracted"
+        }
+    ]
+}

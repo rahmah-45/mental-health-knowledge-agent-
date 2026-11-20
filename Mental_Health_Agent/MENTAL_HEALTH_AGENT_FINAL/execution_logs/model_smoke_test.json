@@ -1,0 +1,35 @@
+{
+  "model": "Qwen2.5-1.5B-Instruct via LangChain HuggingFacePipeline",
+  "started_at_utc": "2026-11-12T18:07:00.401841+00:00",
+  "real_model": true,
+  "cases": [
+    {
+      "id": "sleep_hours",
+      "question": "How many hours of sleep are recommended for adults?",
+      "answer": "Adults aged 18-60 should aim for 7 or more hours of sleep per night [CDC_008, Page 1]\nAdults aged 61-64 should aim for 7 to 9 hours of sleep per night [CDC_008, Page 1]\nAdults aged 65 and older should aim for 7 to 8 hours of sleep per night [CDC_008, Page 1]"
+    },
+    {
+      "id": "stress_effects",
+      "question": "What are some effects of long-term stress?",
+      "answer": "Worsening health problems [CDC_009, Page 1]\nTrouble concentrating and making decisions [CDC_009, Page 1]\nProblems sleeping [CDC_009, Page 1]\nWorsening of chronic health problems [CDC_009, Page 1]\nMental health conditions [CDC_009, Page 1]"
+    },
+    {
+      "id": "anxiety_information",
+      "question": "What experiences may occur with anxiety disorders?",
+      "answer": "Trouble concentrating or making decisions [WHO_002, Page 2]\nFeeling irritable [WHO_002, Page 2]\nTense or restless [WHO_002, Page 2]\nTrouble sleeping [WHO_002, Page 2]\nHeart palpitations [WHO_002, Page 2]"
+    },
+    {
+      "id": "wellbeing_support",
+      "question": "How can relationships support mental wellbeing?",
+      "answer": "Good relationships contribute to mental wellbeing by fostering a sense of belonging and self-worth [NHS_004, Page 1]\nThey offer emotional support and enable sharing of positive experiences [NHS_004, Page 1]"
+    },
+    {
+      "id": "depression_education",
+      "question": "How can depression affect everyday activities?",
+      "answer": "Depression can severely impact daily activities [NIMH_005, Page 1]"
+    }
+  ],
+  "completed_model_calls": 5,
+  "answers_passing_evidence_filter": 5,
+  "total_cases": 5
+}

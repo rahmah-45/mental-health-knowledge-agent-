@@ -1,0 +1,35 @@
+{
+  "run_type": "actual local-model end-to-end RAG execution",
+  "question": "How many hours of sleep are recommended for adults?",
+  "question_classification": "IN_SCOPE",
+  "retriever": "LangChain BaseRetriever adapter over persistent ChromaDB",
+  "retrieved_passages": 5,
+  "relevance_assessment": {
+    "directly_relevant": 1,
+    "partially_relevant": 4,
+    "irrelevant": 0
+  },
+  "corrective_retrieval_attempts": 0,
+  "generation_model": "Qwen2.5-1.5B-Instruct via LangChain HuggingFacePipeline",
+  "generation_outcome": "The model omitted age labels, so the lexical support filter rejected its numeric-only draft. The evidence-only fallback returned source lines verbatim.",
+  "final_answer": [
+    {
+      "claim": "Adult 18-60 years 7 or more hours.",
+      "citation": "CDC_008, Page 1",
+      "supported": true
+    },
+    {
+      "claim": "Adult 61-64 years 7-9 hours.",
+      "citation": "CDC_008, Page 1",
+      "supported": true
+    },
+    {
+      "claim": "Adult 65 years and older 7-8 hours.",
+      "citation": "CDC_008, Page 1",
+      "supported": true
+    }
+  ],
+  "validation_status": "SUPPORTED",
+  "human_review_required": false,
+  "notes": "Sanitized run summary transcribed from the actual local CLI execution; the full run prints node-by-node console trace."
+}

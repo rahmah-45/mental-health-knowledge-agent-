@@ -1,0 +1,82 @@
+{
+  "project": "Examination 3: Evidence-Grounded Mental Health Knowledge and Psychoeducation Agent",
+  "evaluation_date": "2026-11-13",
+  "execution_mode": "Real run_agent invocation through LangGraph using the configured local Qwen model and existing Chroma database; no ingestion or rebuild",
+  "overall_status": "PARTIAL",
+  "execution_note": "The first scenario reached final validation, but the one-off result collector failed while extracting the returned state. The actual node output was retained and is recorded below. The evaluation wrapper then failed to complete the remaining scenarios; no stale prior-run results are presented as current results.",
+  "scenarios": [
+    {
+      "id": "relevant_information",
+      "result": "PASS",
+      "question": "What are some evidence-based ways to manage stress?",
+      "question_classification": "IN_SCOPE",
+      "retrieved_sources": [
+        {"source_id": "WHO_003", "title": "Doing What Matters in Times of Stress: An Illustrated Guide", "page": 3, "relevance": "IRRELEVANT"},
+        {"source_id": "CDC_009", "title": "Managing Stress", "page": 1, "relevance": "RELEVANT"},
+        {"source_id": "CDC_009", "title": "Managing Stress", "page": 1, "relevance": "PARTIALLY_RELEVANT"},
+        {"source_id": "WHO_007", "title": "Psychological First Aid: Guide for Field Workers", "page": 46, "relevance": "IRRELEVANT"},
+        {"source_id": "WHO_003", "title": "Doing What Matters in Times of Stress: An Illustrated Guide", "page": 7, "relevance": "IRRELEVANT"}
+      ],
+      "final_answer": "Learning to cope in a healthy way can help reduce your stress. [CDC_009, Page 1]\nTaking small steps in your daily life to manage stress can have a big impact. [CDC_009, Page 1]\nYou can find and manage what triggers your stress and the right combination of healthy techniques that work for you. [CDC_009, Page 1]\nTake care of your mind. [CDC_009, Page 1]\nTake breaks from news and social media. [CDC_009, Page 1]\nMake time to unwind. [CDC_009, Page 1]",
+      "citations": [{"source_id": "CDC_009", "page": 1}],
+      "validation_status": "SUPPORTED",
+      "validation_notes": "Actual LangGraph node output reported six claims, all supported, citations valid, and validation status SUPPORTED.",
+      "corrective_retrieval_attempts": 0,
+      "human_review_required": false,
+      "human_review_status": "NOT_REQUIRED",
+      "execution_failure": "The result collector raised a citation-regex parsing error after the agent had completed and printed its final validation trace. The answer and validation above were recovered from that captured trace."
+    },
+    {
+      "id": "multiple_documents",
+      "result": "PARTIAL",
+      "question": "How can adequate sleep support emotional well-being, and what effects can long-term stress have on mental health?",
+      "question_classification": null,
+      "retrieved_sources": null,
+      "final_answer": null,
+      "citations": null,
+      "validation_status": null,
+      "validation_notes": "No completed current-code result was captured. The run was interrupted while correcting the external evaluation wrapper.",
+      "corrective_retrieval_attempts": null,
+      "human_review_status": "NOT_CAPTURED"
+    },
+    {
+      "id": "initially_irrelevant_retrieval",
+      "result": "PARTIAL",
+      "question": "What is the latitude of anxiety?",
+      "question_classification": null,
+      "retrieved_sources": null,
+      "final_answer": null,
+      "citations": null,
+      "validation_status": null,
+      "validation_notes": "Not completed against current code in this evaluation.",
+      "corrective_retrieval_attempts": null,
+      "human_review_status": "NOT_CAPTURED"
+    },
+    {
+      "id": "insufficient_evidence",
+      "result": "PARTIAL",
+      "question": "What percentage of people in Pakistan have an anxiety disorder?",
+      "question_classification": null,
+      "retrieved_sources": null,
+      "final_answer": null,
+      "citations": null,
+      "validation_status": null,
+      "validation_notes": "Not completed against current code in this evaluation.",
+      "corrective_retrieval_attempts": null,
+      "human_review_status": "NOT_CAPTURED"
+    },
+    {
+      "id": "out_of_scope",
+      "result": "PARTIAL",
+      "question": "What is the current population of Islamabad?",
+      "question_classification": null,
+      "retrieved_sources": null,
+      "final_answer": null,
+      "citations": null,
+      "validation_status": null,
+      "validation_notes": "Not completed against current code in this evaluation.",
+      "corrective_retrieval_attempts": null,
+      "human_review_status": "NOT_CAPTURED"
+    }
+  ]
+}

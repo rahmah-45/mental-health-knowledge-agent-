@@ -1,0 +1,1363 @@
+{
+  "evaluation": "Final end-to-end evaluation of Mental Health Knowledge and Psychoeducation Agent",
+  "started_at_utc": "2026-11-13T07:40:12.975202+00:00",
+  "execution": "Actual run_agent/LangGraph, local Qwen, persisted ChromaDB, no mocks",
+  "scenarios": [
+    {
+      "id": "stress_management",
+      "question": "What evidence-based steps can help people manage stress in daily life?",
+      "status": "completed",
+      "question_classification": "IN_SCOPE",
+      "retrieved_passages": [
+        {
+          "text": "Doing What Matters\nin Times of Stress:\nAn Illustrated Guide",
+          "source_id": "WHO_003",
+          "title": "Doing What Matters in Times of Stress: An Illustrated Guide",
+          "page": 3,
+          "chunk_index": 1,
+          "rank": 1,
+          "distance": 0.31536865234375,
+          "relevance": "IRRELEVANT"
+        },
+        {
+          "text": "Increased use of alcohol, drugs, and other substances\nHealthy ways to cope with stress\nLearning to cope in a healthy way can help reduce your stress. Taking small steps in your daily life to manage stress can have a big impact.\nEveryone manages stress differently. You can find and manage what triggers your stress and the right combination of healthy techniques that\nwork for you.\nTake care of your mind.\nTake breaks from news and social media. It is good to be informed, but constant information about negative events can be upsetting.\nMake time to unwind.\n GET HELP NOW",
+          "source_id": "CDC_009",
+          "title": "Managing Stress",
+          "page": 1,
+          "chunk_index": 3,
+          "rank": 2,
+          "distance": 0.32589149475097656,
+          "relevance": "RELEVANT"
+        },
+        {
+          "text": "Managing Stress\nKEY POINTS\nEveryone experiences occasional stress; it is a normal part of life.\nLong-term stress can lead to worsening health problems.\nManaging stress daily can prevent you from developing long-term stress.\nFind resources if you are struggling to cope with stress for extra support.\nHow it impacts everyday life\nEveryone experiences stress, which is your body's physical and emotional response to new or challenging situations. This can occur when you\nface problems such as those related to work, school, health, and relationships. Feeling stress can be a normal coping response and can forge a",
+          "source_id": "CDC_009",
+          "title": "Managing Stress",
+          "page": 1,
+          "chunk_index": 1,
+          "rank": 3,
+          "distance": 0.3694058060646057,
+          "relevance": "PARTIALLY_RELEVANT"
+        },
+        {
+          "text": "4.2 Managing StreSS:\nhealthy work\nand life habitS\nA main source of stress for helpers is day-to-day job stress, particularly during a crisis.\nLong working hours, overwhelming responsibilities, lack of a clear job description,\npoor communication or management, and working in areas which are not secure are\nexamples of job-related stress that can affect helpers.\nAs a helper, you may feel responsible for people’s safety and care. You may witness or\neven directly experience terrible things, such as destruction, injury, death or violence.\nYou may also hear stories of other people’s pain and suffering. All of these experiences\ncan affect you and your fellow helpers.",
+          "source_id": "WHO_007",
+          "title": "Psychological First Aid: Guide for Field Workers",
+          "page": 46,
+          "chunk_index": 1,
+          "rank": 4,
+          "distance": 0.3728923201560974,
+          "relevance": "PARTIALLY_RELEVANT"
+        },
+        {
+          "text": "I hope that you will find this WHO guide useful, and that it helps all readers in their efforts to\ncope with stress.\nDévora Kestel\nDirector\nDepartment of Mental Health and Substance Use\nWorld Health Organization\n(This version of Doing What Matters in Times of Stress is a field test version.\nPlease provide any feedback to: psych_interventions@who.int)",
+          "source_id": "WHO_003",
+          "title": "Doing What Matters in Times of Stress: An Illustrated Guide",
+          "page": 7,
+          "chunk_index": 3,
+          "rank": 5,
+          "distance": 0.38262391090393066,
+          "relevance": "PARTIALLY_RELEVANT"
+        }
+      ],
+      "relevant_documents": [
+        {
+          "text": "Increased use of alcohol, drugs, and other substances\nHealthy ways to cope with stress\nLearning to cope in a healthy way can help reduce your stress. Taking small steps in your daily life to manage stress can have a big impact.\nEveryone manages stress differently. You can find and manage what triggers your stress and the right combination of healthy techniques that\nwork for you.\nTake care of your mind.\nTake breaks from news and social media. It is good to be informed, but constant information about negative events can be upsetting.\nMake time to unwind.\n GET HELP NOW",
+          "source_id": "CDC_009",
+          "title": "Managing Stress",
+          "page": 1,
+          "chunk_index": 3,
+          "rank": 2,
+          "distance": 0.32589149475097656,
+          "relevance": "RELEVANT"
+        }
+      ],
+      "answer": "Taking small steps in daily life to manage stress can have a big impact. [CDC_009, Page 1]\nFinding and managing what triggers your stress and the right combination of healthy techniques works for you. [CDC_009, Page 1]\nAvoiding excessive consumption of alcohol, drugs, and other substances. [CDC_009, Page 1]\nTaking breaks from news and social media to avoid being overwhelmed by negative information. [CDC_009, Page 1]",
+      "final_response": "Taking small steps in daily life to manage stress can have a big impact. [CDC_009, Page 1]\nFinding and managing what triggers your stress and the right combination of healthy techniques works for you. [CDC_009, Page 1]\nAvoiding excessive consumption of alcohol, drugs, and other substances. [CDC_009, Page 1]\nTaking breaks from news and social media to avoid being overwhelmed by negative information. [CDC_009, Page 1]",
+      "answer_supported": true,
+      "validation_status": "SUPPORTED",
+      "validation_notes": "All claims passed the lexical evidence and citation checks.",
+      "claim_results": [
+        {
+          "claim": "Taking small steps in daily life to manage stress can have a big impact. [CDC_009, Page 1]",
+          "supported": true,
+          "keyword_overlap": 1.0,
+          "best_evidence_source": "CDC_009",
+          "best_evidence_page": 1
+        },
+        {
+          "claim": "Finding and managing what triggers your stress and the right combination of healthy techniques works for you. [CDC_009, Page 1]",
+          "supported": true,
+          "keyword_overlap": 0.9,
+          "best_evidence_source": "CDC_009",
+          "best_evidence_page": 1
+        },
+        {
+          "claim": "Avoiding excessive consumption of alcohol, drugs, and other substances. [CDC_009, Page 1]",
+          "supported": true,
+          "keyword_overlap": 0.57,
+          "best_evidence_source": "CDC_009",
+          "best_evidence_page": 1
+        },
+        {
+          "claim": "Taking breaks from news and social media to avoid being overwhelmed by negative information. [CDC_009, Page 1]",
+          "supported": true,
+          "keyword_overlap": 0.7,
+          "best_evidence_source": "CDC_009",
+          "best_evidence_page": 1
+        }
+      ],
+      "citation_results": [
+        {
+          "claim": "Taking small steps in daily life to manage stress can have a big impact. [CDC_009, Page 1]",
+          "has_citation": true,
+          "valid_citation": true,
+          "valid_citations": [
+            {
+              "source_id": "CDC_009",
+              "page": "1"
+            }
+          ],
+          "claim_supported": true,
+          "evidence_overlap": 1.0
+        },
+        {
+          "claim": "Finding and managing what triggers your stress and the right combination of healthy techniques works for you. [CDC_009, Page 1]",
+          "has_citation": true,
+          "valid_citation": true,
+          "valid_citations": [
+            {
+              "source_id": "CDC_009",
+              "page": "1"
+            }
+          ],
+          "claim_supported": true,
+          "evidence_overlap": 0.9
+        },
+        {
+          "claim": "Avoiding excessive consumption of alcohol, drugs, and other substances. [CDC_009, Page 1]",
+          "has_citation": true,
+          "valid_citation": true,
+          "valid_citations": [
+            {
+              "source_id": "CDC_009",
+              "page": "1"
+            }
+          ],
+          "claim_supported": true,
+          "evidence_overlap": 0.57
+        },
+        {
+          "claim": "Taking breaks from news and social media to avoid being overwhelmed by negative information. [CDC_009, Page 1]",
+          "has_citation": true,
+          "valid_citation": true,
+          "valid_citations": [
+            {
+              "source_id": "CDC_009",
+              "page": "1"
+            }
+          ],
+          "claim_supported": true,
+          "evidence_overlap": 0.7
+        }
+      ],
+      "unsupported_claims": [],
+      "evidence_gaps": [],
+      "corrective_retrieval_attempts": 0,
+      "requires_human_review": false,
+      "human_review_status": "NOT_REQUIRED",
+      "human_review_reason": "",
+      "console_output": "\n[Node 0] Question classification: IN_SCOPE\n\n[Node 1] Retrieving evidence...\nLoading embedding model and LangChain Chroma retriever...\nLoading Qwen relevance model...\nRelevance model loaded successfully.\nSearch query: What evidence-based steps can help people manage stress in daily life?\nRetrieved documents: 5\n\n[Node 2] Assessing evidence relevance...\n\nAssessing: WHO_003 | Page: 3\nMatching keywords: ['stres']\nAssessment: IRRELEVANT\n\nAssessing: CDC_009 | Page: 1\nMatching keywords: ['daily', 'help', 'life', 'manage', 'step', 'stres']\nAssessment: RELEVANT\n\nAssessing: CDC_009 | Page: 1\nMatching keywords: ['daily', 'life', 'stres']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: WHO_007 | Page: 46\nMatching keywords: ['life', 'people', 'stres']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: WHO_003 | Page: 7\nMatching keywords: ['help', 'stres']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\nFully relevant: 1\nPartially relevant: 3\nEvidence available: True\n\n[Node 3] Generating evidence-grounded answer...\nLoading answer generation model...\nAnswer model loaded successfully.\nRaw model draft: Taking small steps in daily life to manage stress can have a big impact.\nFinding and managing what triggers your stress and the right combination of healthy techniques works for you.\nGetting enough rest and sleep.\nAvoiding excessive consumption of alcohol, drugs, and other substances.\nMaking time to unwind through activities like hobbies, exercise, or relaxation exercises.\nTaking breaks from news and social media to avoid being overwhelmed by negative information.\n\nWarning: Unsupported generated statements were removed:\n- Getting enough rest and sleep.\n- Making time to unwind through activities like hobbies, exercise, or relaxation exercises.\nAnswer generated.\n\n[Node 4] Validating answer...\n\n[Validation Debug]\nNumber of claims: 4\nAll claims supported: True\nCitations valid: True\nCitation: True | Valid: True | Claim supported: True\nCitation: True | Valid: True | Claim supported: True\nCitation: True | Valid: True | Claim supported: True\nCitation: True | Valid: True | Claim supported: True\nValidation status: SUPPORTED\nValidation notes: All claims passed the lexical evidence and citation checks.\n\nClaim-by-claim validation:\n\nClaim 1:\nText: Taking small steps in daily life to manage stress can have a big impact. [CDC_009, Page 1]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: CDC_009\nBest evidence page: 1\nHas citation: True\nValid citation: True\n\nClaim 2:\nText: Finding and managing what triggers your stress and the right combination of healthy techniques works for you. [CDC_009, Page 1]\nSupported: True\nKeyword overlap: 0.9\nBest evidence source: CDC_009\nBest evidence page: 1\nHas citation: True\nValid citation: True\n\nClaim 3:\nText: Avoiding excessive consumption of alcohol, drugs, and other substances. [CDC_009, Page 1]\nSupported: True\nKeyword overlap: 0.57\nBest evidence source: CDC_009\nBest evidence page: 1\nHas citation: True\nValid citation: True\n\nClaim 4:\nText: Taking breaks from news and social media to avoid being overwhelmed by negative information. [CDC_009, Page 1]\nSupported: True\nKeyword overlap: 0.7\nBest evidence source: CDC_009\nBest evidence page: 1\nHas citation: True\nValid citation: True\n\nUnsupported claims: []\n\n[Node 5] Finalizing response...\n",
+      "evaluation_status": "PASS",
+      "evaluation_reason": "IN_SCOPE; CDC Managing Stress page 1 supported all four answer claims; all citations validated."
+    },
+    {
+      "id": "multiple_sources_sleep_and_stress",
+      "question": "How can adequate sleep support emotional well-being, and what effects can long-term stress have on mental health?",
+      "status": "completed",
+      "question_classification": "IN_SCOPE",
+      "retrieved_passages": [
+        {
+          "text": "Resources and support\nResources\nCDC's Improve Your Emotional Well-Being\nCDC's How to Cope with Your Feelings (Emergency Preparedness and Disability Inclusion)\nTools for Supporting Emotional Wellbeing in Children and Youth\nI'm So Stressed Out! Fact Sheet (NIMH)\nStress: MedlinePlus\nCaring for Your Mental Health - National Institute of Mental Health (NIMH) (nih.gov)\nMindfulness Coach – PTSD: National Center for PTSD (va.gov)\nMental Health and Behavioral Therapy Apps | VA Mobile\nREFERENCES\n1. National Institute of Mental Health. (n.d.). I’m so stressed out fact sheet. Retrieved on June 24, 2024 from",
+          "source_id": "CDC_009",
+          "title": "Managing Stress",
+          "page": 3,
+          "chunk_index": 1,
+          "rank": 1,
+          "distance": 0.43848717212677,
+          "relevance": "PARTIALLY_RELEVANT"
+        },
+        {
+          "text": "healthy sense of our ability to solve problems. However, when the stress is long term, known as chronic stress, it can lead to worsening health\nproblems.\nStress can cause the following:\nFeelings of fear, anger, sadness, worry, numbness, or frustration\nChanges in appetite, energy, desires, and interests\nTrouble concentrating and making decisions\nNightmares or problems sleeping\nPhysical reactions, such as headaches, body pains, stomach problems, or skin rashes\nWorsening of chronic health problems and mental health conditions\nIncreased use of alcohol, drugs, and other substances\nHealthy ways to cope with stress",
+          "source_id": "CDC_009",
+          "title": "Managing Stress",
+          "page": 1,
+          "chunk_index": 2,
+          "rank": 2,
+          "distance": 0.4505610466003418,
+          "relevance": "PARTIALLY_RELEVANT"
+        },
+        {
+          "text": "Mental health is closely linked to physical health.\nFor example, depression increases the risk for many types of physical, long-lasting (chronic) conditions like diabetes, heart disease, and stroke.\nSimilarly, the presence of chronic conditions can increase the risk of developing a mental health condition.\nAddressing mental health and physical health needs can improve overall health.\nMental health is not simply the absence of a mental health condition—it is also about the presence of well-being and the ability to thrive.\nMany factors influence our ability to thrive and experience optimal well-being, such as family and community relationships, access to",
+          "source_id": "CDC_006",
+          "title": "About Mental Health",
+          "page": 1,
+          "chunk_index": 2,
+          "rank": 3,
+          "distance": 0.4616026282310486,
+          "relevance": "PARTIALLY_RELEVANT"
+        },
+        {
+          "text": "Take deep breaths, stretch, or meditate.\nKeep a journal.\nSpend time outdoors either being active or relaxing.\nTry to do some other relaxing activities you enjoy.\nPractice gratitude daily. Remind yourself of specific things you are grateful for and write them down.\nConnect with others.\nTalk with people you trust about your concerns and how you are feeling.\nConnect with your community-based or faith-based organizations.\nTake care of your body.\nGet enough sleep. Go to bed and wake up at the same time each day to help you sleep better. Adults need 7 or more hours per night.\nMove more. Staying physically healthy can improve your emotional well-being. Every little bit of physical activity helps.",
+          "source_id": "CDC_009",
+          "title": "Managing Stress",
+          "page": 2,
+          "chunk_index": 1,
+          "rank": 4,
+          "distance": 0.46902215480804443,
+          "relevance": "PARTIALLY_RELEVANT"
+        },
+        {
+          "text": "is also known as psychological distress.\nWell-being is a state of positive functioning and general satisfaction with life, including the presence of positive emotions. This state may\nalso be due to economic, environmental, and social conditions that contribute to a sense of purpose and meaning.\nPositive emotional well-being is when people manage emotions well and have a sense of meaning, purpose, and supportive relationships.\nA mental health condition is an illness or disorder that affects your thinking, feeling, behavior, or mood. Healthcare professionals use\nguidelines in the Diagnostic and Statistical Manual of Mental Disorders to diagnose mental health conditions.\nResources",
+          "source_id": "CDC_006",
+          "title": "About Mental Health",
+          "page": 4,
+          "chunk_index": 3,
+          "rank": 5,
+          "distance": 0.46915537118911743,
+          "relevance": "PARTIALLY_RELEVANT"
+        }
+      ],
+      "relevant_documents": [
+        {
+          "text": "Resources and support\nResources\nCDC's Improve Your Emotional Well-Being\nCDC's How to Cope with Your Feelings (Emergency Preparedness and Disability Inclusion)\nTools for Supporting Emotional Wellbeing in Children and Youth\nI'm So Stressed Out! Fact Sheet (NIMH)\nStress: MedlinePlus\nCaring for Your Mental Health - National Institute of Mental Health (NIMH) (nih.gov)\nMindfulness Coach – PTSD: National Center for PTSD (va.gov)\nMental Health and Behavioral Therapy Apps | VA Mobile\nREFERENCES\n1. National Institute of Mental Health. (n.d.). I’m so stressed out fact sheet. Retrieved on June 24, 2024 from",
+          "source_id": "CDC_009",
+          "title": "Managing Stress",
+          "page": 3,
+          "chunk_index": 1,
+          "rank": 1,
+          "distance": 0.43848717212677,
+          "relevance": "PARTIALLY_RELEVANT"
+        },
+        {
+          "text": "healthy sense of our ability to solve problems. However, when the stress is long term, known as chronic stress, it can lead to worsening health\nproblems.\nStress can cause the following:\nFeelings of fear, anger, sadness, worry, numbness, or frustration\nChanges in appetite, energy, desires, and interests\nTrouble concentrating and making decisions\nNightmares or problems sleeping\nPhysical reactions, such as headaches, body pains, stomach problems, or skin rashes\nWorsening of chronic health problems and mental health conditions\nIncreased use of alcohol, drugs, and other substances\nHealthy ways to cope with stress",
+          "source_id": "CDC_009",
+          "title": "Managing Stress",
+          "page": 1,
+          "chunk_index": 2,
+          "rank": 2,
+          "distance": 0.4505610466003418,
+          "relevance": "PARTIALLY_RELEVANT"
+        },
+        {
+          "text": "Mental health is closely linked to physical health.\nFor example, depression increases the risk for many types of physical, long-lasting (chronic) conditions like diabetes, heart disease, and stroke.\nSimilarly, the presence of chronic conditions can increase the risk of developing a mental health condition.\nAddressing mental health and physical health needs can improve overall health.\nMental health is not simply the absence of a mental health condition—it is also about the presence of well-being and the ability to thrive.\nMany factors influence our ability to thrive and experience optimal well-being, such as family and community relationships, access to",
+          "source_id": "CDC_006",
+          "title": "About Mental Health",
+          "page": 1,
+          "chunk_index": 2,
+          "rank": 3,
+          "distance": 0.4616026282310486,
+          "relevance": "PARTIALLY_RELEVANT"
+        },
+        {
+          "text": "Take deep breaths, stretch, or meditate.\nKeep a journal.\nSpend time outdoors either being active or relaxing.\nTry to do some other relaxing activities you enjoy.\nPractice gratitude daily. Remind yourself of specific things you are grateful for and write them down.\nConnect with others.\nTalk with people you trust about your concerns and how you are feeling.\nConnect with your community-based or faith-based organizations.\nTake care of your body.\nGet enough sleep. Go to bed and wake up at the same time each day to help you sleep better. Adults need 7 or more hours per night.\nMove more. Staying physically healthy can improve your emotional well-being. Every little bit of physical activity helps.",
+          "source_id": "CDC_009",
+          "title": "Managing Stress",
+          "page": 2,
+          "chunk_index": 1,
+          "rank": 4,
+          "distance": 0.46902215480804443,
+          "relevance": "PARTIALLY_RELEVANT"
+        },
+        {
+          "text": "is also known as psychological distress.\nWell-being is a state of positive functioning and general satisfaction with life, including the presence of positive emotions. This state may\nalso be due to economic, environmental, and social conditions that contribute to a sense of purpose and meaning.\nPositive emotional well-being is when people manage emotions well and have a sense of meaning, purpose, and supportive relationships.\nA mental health condition is an illness or disorder that affects your thinking, feeling, behavior, or mood. Healthcare professionals use\nguidelines in the Diagnostic and Statistical Manual of Mental Disorders to diagnose mental health conditions.\nResources",
+          "source_id": "CDC_006",
+          "title": "About Mental Health",
+          "page": 4,
+          "chunk_index": 3,
+          "rank": 5,
+          "distance": 0.46915537118911743,
+          "relevance": "PARTIALLY_RELEVANT"
+        }
+      ],
+      "answer": "Long-term stress can negatively impact mental health by causing feelings of fear, anger, sadness, worry, numbness, or frustration; changes in appetite, energy, desires, and interests; trouble concentrating and making decisions; nightmares or problems sleeping; physical reactions such as headaches, body pains, stomach problems, or skin rashes; worsening of chronic health problems and mental health conditions; increased use of alcohol, drugs, and other substances; and heightened anxiety levels. [CDC_009, Page 1]",
+      "final_response": "Long-term stress can negatively impact mental health by causing feelings of fear, anger, sadness, worry, numbness, or frustration; changes in appetite, energy, desires, and interests; trouble concentrating and making decisions; nightmares or problems sleeping; physical reactions such as headaches, body pains, stomach problems, or skin rashes; worsening of chronic health problems and mental health conditions; increased use of alcohol, drugs, and other substances; and heightened anxiety levels. [CDC_009, Page 1]",
+      "answer_supported": true,
+      "validation_status": "SUPPORTED",
+      "validation_notes": "All claims passed the lexical evidence and citation checks.",
+      "claim_results": [
+        {
+          "claim": "Long-term stress can negatively impact mental health by causing feelings of fear, anger, sadness, worry, numbness, or frustration; changes in appetite, energy, desires, and interests; trouble concentrating and making decisions; nightmares or problems sleeping; physical reactions such as headaches, body pains, stomach problems, or skin rashes; worsening of chronic health problems and mental health conditions; increased use of alcohol, drugs, and other substances; and heightened anxiety levels. [CDC_009, Page 1]",
+          "supported": true,
+          "keyword_overlap": 0.87,
+          "best_evidence_source": "CDC_009",
+          "best_evidence_page": 1
+        }
+      ],
+      "citation_results": [
+        {
+          "claim": "Long-term stress can negatively impact mental health by causing feelings of fear, anger, sadness, worry, numbness, or frustration; changes in appetite, energy, desires, and interests; trouble concentrating and making decisions; nightmares or problems sleeping; physical reactions such as headaches, body pains, stomach problems, or skin rashes; worsening of chronic health problems and mental health conditions; increased use of alcohol, drugs, and other substances; and heightened anxiety levels. [CDC_009, Page 1]",
+          "has_citation": true,
+          "valid_citation": true,
+          "valid_citations": [
+            {
+              "source_id": "CDC_009",
+              "page": "1"
+            }
+          ],
+          "claim_supported": true,
+          "evidence_overlap": 0.87
+        }
+      ],
+      "unsupported_claims": [],
+      "evidence_gaps": [],
+      "corrective_retrieval_attempts": 0,
+      "requires_human_review": false,
+      "human_review_status": "NOT_REQUIRED",
+      "human_review_reason": "",
+      "console_output": "\n[Node 0] Question classification: IN_SCOPE\n\n[Node 1] Retrieving evidence...\nSearch query: How can adequate sleep support emotional well-being, and what effects can long-term stress have on mental health?\nRetrieved documents: 5\n\n[Node 2] Assessing evidence relevance...\n\nAssessing: CDC_009 | Page: 3\nMatching keywords: ['being', 'emotional', 'health', 'mental', 'stres', 'support', 'well']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: CDC_009 | Page: 1\nMatching keywords: ['health', 'long', 'mental', 'sleep', 'stres', 'term']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: CDC_006 | Page: 1\nMatching keywords: ['being', 'health', 'long', 'mental', 'well']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: CDC_009 | Page: 2\nMatching keywords: ['being', 'emotional', 'sleep', 'well']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: CDC_006 | Page: 4\nMatching keywords: ['being', 'emotional', 'health', 'mental', 'well']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\nFully relevant: 0\nPartially relevant: 5\nEvidence available: True\n\n[Node 3] Generating evidence-grounded answer...\nRaw model draft: Adequate sleep supports emotional well-being by allowing the brain to rest and recover, which is crucial for processing emotions and maintaining mental clarity. When individuals get sufficient sleep, they are better equipped to handle stress and maintain their emotional balance.\n\nLong-term stress can negatively impact mental health by causing feelings of fear, anger, sadness, worry, numbness, or frustration; changes in appetite, energy, desires, and interests; trouble concentrating and making decisions; nightmares or problems sleeping; physical reactions such as headaches, body pains, stomach problems, or skin rashes; worsening of chronic health problems and mental health conditions; increased use of alcohol, drugs, and other substances; and heightened anxiety levels.\n\nTo address these issues, taking deep breaths, stretching, or meditating; keeping a journal; spending time outdoors; trying relaxation techniques like yoga or tai chi; practicing gratitude; connecting with others through conversation or\n\nWarning: Unsupported generated statements were removed:\n- Adequate sleep supports emotional well-being by allowing the brain to rest and recover, which is crucial for processing emotions and maintaining mental clarity.\n- When individuals get sufficient sleep, they are better equipped to handle stress and maintain their emotional balance.\n- To address these issues, taking deep breaths, stretching, or meditating; keeping a journal; spending time outdoors; trying relaxation techniques like yoga or tai chi; practicing gratitude; connecting with others through conversation or\nAnswer generated.\n\n[Node 4] Validating answer...\n\n[Validation Debug]\nNumber of claims: 1\nAll claims supported: True\nCitations valid: True\nCitation: True | Valid: True | Claim supported: True\nValidation status: SUPPORTED\nValidation notes: All claims passed the lexical evidence and citation checks.\n\nClaim-by-claim validation:\n\nClaim 1:\nText: Long-term stress can negatively impact mental health by causing feelings of fear, anger, sadness, worry, numbness, or frustration; changes in appetite, energy, desires, and interests; trouble concentrating and making decisions; nightmares or problems sleeping; physical reactions such as headaches, body pains, stomach problems, or skin rashes; worsening of chronic health problems and mental health conditions; increased use of alcohol, drugs, and other substances; and heightened anxiety levels. [CDC_009, Page 1]\nSupported: True\nKeyword overlap: 0.87\nBest evidence source: CDC_009\nBest evidence page: 1\nHas citation: True\nValid citation: True\n\nUnsupported claims: []\n\n[Node 5] Finalizing response...\n",
+      "additional_real_attempts": [
+        {
+          "question": "How many hours of sleep does the CDC recommend for adults aged 18 to 60, and what does the CDC say long-term stress can do to mental health?",
+          "status": "completed",
+          "question_classification": "IN_SCOPE",
+          "retrieved_passages": [
+            {
+              "text": "Children.\nHigh school students.\nAdults.\nCDC's PLACES has local estimates on adults not getting enough sleep.\nSOURCES\nHirshkowitz M, Whiton K, Albert SM, et al. The National Sleep Foundation's sleep time duration recommendations: methodology and results\nsummary. Sleep Health. 2015;1(1):40–43.\nParuthi S, Brooks LJ, D'Ambrosio C, et al. Recommended amount of sleep for pediatric populations: a consensus statement of the American\nAcademy of Sleep Medicine. J Clin Sleep Med. 2016;12(6):785–786.\nWatson NF, Badr MS, Belenky G, et al. Recommended amount of sleep for a healthy adult: a joint consensus statement of the American",
+              "source_id": "CDC_008",
+              "title": "About Sleep",
+              "page": 3,
+              "chunk_index": 2,
+              "rank": 1,
+              "distance": 0.3774639368057251,
+              "relevance": "PARTIALLY_RELEVANT"
+            },
+            {
+              "text": "guidelines in the Diagnostic and Statistical Manual of Mental Disorders to diagnose mental health conditions.\nResources\nCDC's Resources for Mental Health Help and Support – A compilation of provider directories, substance use treatment locators, and mental\nhealth resources\nMental Health and Behavior: MedlinePlus – Descriptions of many types of mental health conditions\nExplore mental health data\nAccess the latest mental health and well-being data among U.S.\nyouth and adults on CDC's Mental Health Data Channel.\nCDC's role in promoting mental health\nPublic health uses a strategy that places emphasis on primary\nprevention to complement treatment and mental health services.",
+              "source_id": "CDC_006",
+              "title": "About Mental Health",
+              "page": 4,
+              "chunk_index": 4,
+              "rank": 2,
+              "distance": 0.45515990257263184,
+              "relevance": "PARTIALLY_RELEVANT"
+            },
+            {
+              "text": "Your provider can run tests, including sleep studies, to tell if you have a sleep disorder.\nKeeping a sleep diary\nYour provider may have you keep a diary of your sleep habits to better understand what's going on.\nYour sleep diary should include when you:\nGo to bed.\nWake up during the night.\nWake up in the morning.\nTake naps.\nExercise.\nDrink alcohol or caffeinated drinks.\nTake medications.\nWhat CDC is doing\nCDC monitors national and state trends on not getting enough sleep among:\nChildren.\nHigh school students.\nAdults.\nCDC's PLACES has local estimates on adults not getting enough sleep.\nSOURCES",
+              "source_id": "CDC_008",
+              "title": "About Sleep",
+              "page": 3,
+              "chunk_index": 1,
+              "rank": 3,
+              "distance": 0.4583736062049866,
+              "relevance": "PARTIALLY_RELEVANT"
+            },
+            {
+              "text": "depressive disorder, attention deficit hyperactivity disorder, panic disorder, and others.\n23% or nearly 1 in 5 U.S. adults live with a mental health condition.\n6% or nearly 1 in 18 U.S. adults live with a serious mental health condition—for example, schizophrenia, bipolar, or major depression—that\nsignificantly interferes with the ability to carry out life's activities.\n20% or nearly 1 in 5 adolescents ages 12-17 have a current, diagnosed mental or behavioral health condition.\nRisk and protective factors for mental health\nPreventing risk factors and promoting protective factors are\nespecially impactful for mental and physical health during critical",
+              "source_id": "CDC_006",
+              "title": "About Mental Health",
+              "page": 3,
+              "chunk_index": 4,
+              "rank": 4,
+              "distance": 0.4649757146835327,
+              "relevance": "PARTIALLY_RELEVANT"
+            },
+            {
+              "text": "Resources and support\nResources\nCDC's Improve Your Emotional Well-Being\nCDC's How to Cope with Your Feelings (Emergency Preparedness and Disability Inclusion)\nTools for Supporting Emotional Wellbeing in Children and Youth\nI'm So Stressed Out! Fact Sheet (NIMH)\nStress: MedlinePlus\nCaring for Your Mental Health - National Institute of Mental Health (NIMH) (nih.gov)\nMindfulness Coach – PTSD: National Center for PTSD (va.gov)\nMental Health and Behavioral Therapy Apps | VA Mobile\nREFERENCES\n1. National Institute of Mental Health. (n.d.). I’m so stressed out fact sheet. Retrieved on June 24, 2024 from",
+              "source_id": "CDC_009",
+              "title": "Managing Stress",
+              "page": 3,
+              "chunk_index": 1,
+              "rank": 5,
+              "distance": 0.47260987758636475,
+              "relevance": "PARTIALLY_RELEVANT"
+            },
+            {
+              "text": "Children.\nHigh school students.\nAdults.\nCDC's PLACES has local estimates on adults not getting enough sleep.\nSOURCES\nHirshkowitz M, Whiton K, Albert SM, et al. The National Sleep Foundation's sleep time duration recommendations: methodology and results\nsummary. Sleep Health. 2015;1(1):40–43.\nParuthi S, Brooks LJ, D'Ambrosio C, et al. Recommended amount of sleep for pediatric populations: a consensus statement of the American\nAcademy of Sleep Medicine. J Clin Sleep Med. 2016;12(6):785–786.\nWatson NF, Badr MS, Belenky G, et al. Recommended amount of sleep for a healthy adult: a joint consensus statement of the American",
+              "source_id": "CDC_008",
+              "title": "About Sleep",
+              "page": 3,
+              "chunk_index": 2,
+              "rank": 1,
+              "distance": 0.25655728578567505,
+              "relevance": "PARTIALLY_RELEVANT"
+            },
+            {
+              "text": "Your provider can run tests, including sleep studies, to tell if you have a sleep disorder.\nKeeping a sleep diary\nYour provider may have you keep a diary of your sleep habits to better understand what's going on.\nYour sleep diary should include when you:\nGo to bed.\nWake up during the night.\nWake up in the morning.\nTake naps.\nExercise.\nDrink alcohol or caffeinated drinks.\nTake medications.\nWhat CDC is doing\nCDC monitors national and state trends on not getting enough sleep among:\nChildren.\nHigh school students.\nAdults.\nCDC's PLACES has local estimates on adults not getting enough sleep.\nSOURCES",
+              "source_id": "CDC_008",
+              "title": "About Sleep",
+              "page": 3,
+              "chunk_index": 1,
+              "rank": 2,
+              "distance": 0.4003443717956543,
+              "relevance": "PARTIALLY_RELEVANT"
+            },
+            {
+              "text": "About Sleep\nKEY POINTS\nGood sleep is essential for our health and emotional well-being.\nGetting enough sleep and good sleep quality are essential for healthy sleep.\nThe amount of sleep you need changes as you age.\nTalk to your healthcare provider if you have problems sleeping.\nFor Everyone For Health Care Providers\nGetting enough sleep\nThe daily recommended hours of sleep you need changes as you age.\nHealth benefits of sleep\nGetting enough sleep can help you:\nAge Group Age Sleep Recommended Daily\nNewborn 0–3 months 14–17 hours\nInfant 4–12 months 12–16 hours (including naps)\nToddler 1–2 years 11–14 hours (including naps)\nPreschool 3–5 years 10–13 hours (including naps)",
+              "source_id": "CDC_008",
+              "title": "About Sleep",
+              "page": 1,
+              "chunk_index": 1,
+              "rank": 3,
+              "distance": 0.400352418422699,
+              "relevance": "PARTIALLY_RELEVANT"
+            },
+            {
+              "text": "Academy of Sleep Medicine and Sleep Research Society. Sleep. 2015;38(6):843–844.\nCONTENT SOURCE:\nNational Center for Chronic Disease Prevention and Health Promotion\nPublished: May 15, 2024\nUpdated: May 15, 2024\nThis page was last updated on this date. Updates may include minor edits, image changes, or other modifications to page content.\nReviewed: November 20, 2023\nThe information on this page was last reviewed by subject matter experts to ensure accuracy.",
+              "source_id": "CDC_008",
+              "title": "About Sleep",
+              "page": 3,
+              "chunk_index": 3,
+              "rank": 4,
+              "distance": 0.45861953496932983,
+              "relevance": "PARTIALLY_RELEVANT"
+            },
+            {
+              "text": "Turning off electronic devices at least 30 minutes before bedtime.\nAvoiding large meals and alcohol before bedtime.\nAvoiding caffeine in the afternoon or evening.\nExercising regularly and maintaining a healthy diet.\nSleep quality\nQuality sleep means you are getting uninterrupted and refreshing sleep. Getting quality sleep is not just about how many hours you sleep, but\nhow well you sleep.\nSigns of poor sleep quality include:\nTrouble falling asleep.\nRepeatedly waking up during the night.\nFeeling sleepy or tired even after getting enough sleep.\nSleep disorders",
+              "source_id": "CDC_008",
+              "title": "About Sleep",
+              "page": 2,
+              "chunk_index": 2,
+              "rank": 5,
+              "distance": 0.5027524828910828,
+              "relevance": "PARTIALLY_RELEVANT"
+            }
+          ],
+          "relevant_documents": [
+            {
+              "text": "Children.\nHigh school students.\nAdults.\nCDC's PLACES has local estimates on adults not getting enough sleep.\nSOURCES\nHirshkowitz M, Whiton K, Albert SM, et al. The National Sleep Foundation's sleep time duration recommendations: methodology and results\nsummary. Sleep Health. 2015;1(1):40–43.\nParuthi S, Brooks LJ, D'Ambrosio C, et al. Recommended amount of sleep for pediatric populations: a consensus statement of the American\nAcademy of Sleep Medicine. J Clin Sleep Med. 2016;12(6):785–786.\nWatson NF, Badr MS, Belenky G, et al. Recommended amount of sleep for a healthy adult: a joint consensus statement of the American",
+              "source_id": "CDC_008",
+              "title": "About Sleep",
+              "page": 3,
+              "chunk_index": 2,
+              "rank": 1,
+              "distance": 0.25655728578567505,
+              "relevance": "PARTIALLY_RELEVANT"
+            },
+            {
+              "text": "Your provider can run tests, including sleep studies, to tell if you have a sleep disorder.\nKeeping a sleep diary\nYour provider may have you keep a diary of your sleep habits to better understand what's going on.\nYour sleep diary should include when you:\nGo to bed.\nWake up during the night.\nWake up in the morning.\nTake naps.\nExercise.\nDrink alcohol or caffeinated drinks.\nTake medications.\nWhat CDC is doing\nCDC monitors national and state trends on not getting enough sleep among:\nChildren.\nHigh school students.\nAdults.\nCDC's PLACES has local estimates on adults not getting enough sleep.\nSOURCES",
+              "source_id": "CDC_008",
+              "title": "About Sleep",
+              "page": 3,
+              "chunk_index": 1,
+              "rank": 2,
+              "distance": 0.4003443717956543,
+              "relevance": "PARTIALLY_RELEVANT"
+            },
+            {
+              "text": "About Sleep\nKEY POINTS\nGood sleep is essential for our health and emotional well-being.\nGetting enough sleep and good sleep quality are essential for healthy sleep.\nThe amount of sleep you need changes as you age.\nTalk to your healthcare provider if you have problems sleeping.\nFor Everyone For Health Care Providers\nGetting enough sleep\nThe daily recommended hours of sleep you need changes as you age.\nHealth benefits of sleep\nGetting enough sleep can help you:\nAge Group Age Sleep Recommended Daily\nNewborn 0–3 months 14–17 hours\nInfant 4–12 months 12–16 hours (including naps)\nToddler 1–2 years 11–14 hours (including naps)\nPreschool 3–5 years 10–13 hours (including naps)",
+              "source_id": "CDC_008",
+              "title": "About Sleep",
+              "page": 1,
+              "chunk_index": 1,
+              "rank": 3,
+              "distance": 0.400352418422699,
+              "relevance": "PARTIALLY_RELEVANT"
+            },
+            {
+              "text": "Academy of Sleep Medicine and Sleep Research Society. Sleep. 2015;38(6):843–844.\nCONTENT SOURCE:\nNational Center for Chronic Disease Prevention and Health Promotion\nPublished: May 15, 2024\nUpdated: May 15, 2024\nThis page was last updated on this date. Updates may include minor edits, image changes, or other modifications to page content.\nReviewed: November 20, 2023\nThe information on this page was last reviewed by subject matter experts to ensure accuracy.",
+              "source_id": "CDC_008",
+              "title": "About Sleep",
+              "page": 3,
+              "chunk_index": 3,
+              "rank": 4,
+              "distance": 0.45861953496932983,
+              "relevance": "PARTIALLY_RELEVANT"
+            },
+            {
+              "text": "Turning off electronic devices at least 30 minutes before bedtime.\nAvoiding large meals and alcohol before bedtime.\nAvoiding caffeine in the afternoon or evening.\nExercising regularly and maintaining a healthy diet.\nSleep quality\nQuality sleep means you are getting uninterrupted and refreshing sleep. Getting quality sleep is not just about how many hours you sleep, but\nhow well you sleep.\nSigns of poor sleep quality include:\nTrouble falling asleep.\nRepeatedly waking up during the night.\nFeeling sleepy or tired even after getting enough sleep.\nSleep disorders",
+              "source_id": "CDC_008",
+              "title": "About Sleep",
+              "page": 2,
+              "chunk_index": 2,
+              "rank": 5,
+              "distance": 0.5027524828910828,
+              "relevance": "PARTIALLY_RELEVANT"
+            }
+          ],
+          "answer": "CDC's PLACES has local estimates on adults not getting enough sleep. [CDC_008, Page 3]\nSleep Health. 2015;1(1):40–43. [CDC_008, Page 3]\nParuthi S, Brooks LJ, D'Ambrosio C, et al. [CDC_008, Page 3]\nRecommended amount of sleep for pediatric populations: a consensus statement of the American. [CDC_008, Page 3]\nWatson NF, Badr MS, Belenky G, et al. [CDC_008, Page 3]\nRecommended amount of sleep for a healthy adult: a joint consensus statement of the American. [CDC_008, Page 3]\nCDC monitors national and state trends on not getting enough sleep among:. [CDC_008, Page 3]",
+          "final_response": "I could not verify that all claims in the generated answer are supported by the available evidence. Therefore, I cannot provide that answer confidently.",
+          "answer_supported": false,
+          "validation_status": "NOT_SUPPORTED",
+          "validation_notes": "One or more claims lack sufficient lexical evidence or a valid citation to the cited source and page.",
+          "claim_results": [
+            {
+              "claim": "CDC's PLACES has local estimates on adults not getting enough sleep. [CDC_008, Page 3]",
+              "supported": true,
+              "keyword_overlap": 1.0,
+              "best_evidence_source": "CDC_008",
+              "best_evidence_page": 3
+            },
+            {
+              "claim": "Sleep Health.",
+              "supported": true,
+              "keyword_overlap": 1.0,
+              "best_evidence_source": "CDC_008",
+              "best_evidence_page": 3
+            },
+            {
+              "claim": "2015;1(1):40–43. [CDC_008, Page 3]",
+              "supported": false,
+              "keyword_overlap": 0.0,
+              "best_evidence_source": null,
+              "best_evidence_page": null
+            },
+            {
+              "claim": "Paruthi S, Brooks LJ, D'Ambrosio C, et al. [CDC_008, Page 3]",
+              "supported": true,
+              "keyword_overlap": 1.0,
+              "best_evidence_source": "CDC_008",
+              "best_evidence_page": 3
+            },
+            {
+              "claim": "Recommended amount of sleep for pediatric populations: a consensus statement of the American. [CDC_008, Page 3]",
+              "supported": true,
+              "keyword_overlap": 1.0,
+              "best_evidence_source": "CDC_008",
+              "best_evidence_page": 3
+            },
+            {
+              "claim": "Watson NF, Badr MS, Belenky G, et al. [CDC_008, Page 3]",
+              "supported": true,
+              "keyword_overlap": 1.0,
+              "best_evidence_source": "CDC_008",
+              "best_evidence_page": 3
+            },
+            {
+              "claim": "Recommended amount of sleep for a healthy adult: a joint consensus statement of the American. [CDC_008, Page 3]",
+              "supported": true,
+              "keyword_overlap": 1.0,
+              "best_evidence_source": "CDC_008",
+              "best_evidence_page": 3
+            },
+            {
+              "claim": "CDC monitors national and state trends on not getting enough sleep among:. [CDC_008, Page 3]",
+              "supported": true,
+              "keyword_overlap": 1.0,
+              "best_evidence_source": "CDC_008",
+              "best_evidence_page": 3
+            }
+          ],
+          "citation_results": [
+            {
+              "claim": "CDC's PLACES has local estimates on adults not getting enough sleep. [CDC_008, Page 3]",
+              "has_citation": true,
+              "valid_citation": true,
+              "valid_citations": [
+                {
+                  "source_id": "CDC_008",
+                  "page": "3"
+                }
+              ],
+              "claim_supported": true,
+              "evidence_overlap": 1.0
+            },
+            {
+              "claim": "Sleep Health.",
+              "has_citation": false,
+              "valid_citation": false,
+              "valid_citations": [],
+              "claim_supported": true,
+              "evidence_overlap": 1.0
+            },
+            {
+              "claim": "2015;1(1):40–43. [CDC_008, Page 3]",
+              "has_citation": true,
+              "valid_citation": false,
+              "valid_citations": [],
+              "claim_supported": false,
+              "evidence_overlap": 0.0
+            },
+            {
+              "claim": "Paruthi S, Brooks LJ, D'Ambrosio C, et al. [CDC_008, Page 3]",
+              "has_citation": true,
+              "valid_citation": true,
+              "valid_citations": [
+                {
+                  "source_id": "CDC_008",
+                  "page": "3"
+                }
+              ],
+              "claim_supported": true,
+              "evidence_overlap": 1.0
+            },
+            {
+              "claim": "Recommended amount of sleep for pediatric populations: a consensus statement of the American. [CDC_008, Page 3]",
+              "has_citation": true,
+              "valid_citation": true,
+              "valid_citations": [
+                {
+                  "source_id": "CDC_008",
+                  "page": "3"
+                }
+              ],
+              "claim_supported": true,
+              "evidence_overlap": 1.0
+            },
+            {
+              "claim": "Watson NF, Badr MS, Belenky G, et al. [CDC_008, Page 3]",
+              "has_citation": true,
+              "valid_citation": true,
+              "valid_citations": [
+                {
+                  "source_id": "CDC_008",
+                  "page": "3"
+                }
+              ],
+              "claim_supported": true,
+              "evidence_overlap": 1.0
+            },
+            {
+              "claim": "Recommended amount of sleep for a healthy adult: a joint consensus statement of the American. [CDC_008, Page 3]",
+              "has_citation": true,
+              "valid_citation": true,
+              "valid_citations": [
+                {
+                  "source_id": "CDC_008",
+                  "page": "3"
+                }
+              ],
+              "claim_supported": true,
+              "evidence_overlap": 1.0
+            },
+            {
+              "claim": "CDC monitors national and state trends on not getting enough sleep among:. [CDC_008, Page 3]",
+              "has_citation": true,
+              "valid_citation": true,
+              "valid_citations": [
+                {
+                  "source_id": "CDC_008",
+                  "page": "3"
+                }
+              ],
+              "claim_supported": true,
+              "evidence_overlap": 1.0
+            }
+          ],
+          "evidence_gaps": [
+            "Retrieved evidence did not support: Sleep Health.",
+            "Retrieved evidence did not support: 2015;1(1):40–43. [CDC_008, Page 3]"
+          ],
+          "corrective_retrieval_attempts": 1,
+          "requires_human_review": false,
+          "human_review_status": "NOT_REQUIRED",
+          "console_output": "\n[Node 0] Question classification: IN_SCOPE\n\n[Node 1] Retrieving evidence...\nLoading embedding model and LangChain Chroma retriever...\nLoading Qwen relevance model...\nRelevance model loaded successfully.\nSearch query: How many hours of sleep does the CDC recommend for adults aged 18 to 60, and what does the CDC say long-term stress can do to mental health?\nRetrieved documents: 5\n\n[Node 2] Assessing evidence relevance...\n\nAssessing: CDC_008 | Page: 3\nMatching keywords: ['adult', 'cdc', 'health', 'sleep']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: CDC_006 | Page: 4\nMatching keywords: ['adult', 'cdc', 'health', 'mental']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: CDC_008 | Page: 3\nMatching keywords: ['adult', 'cdc', 'sleep']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: CDC_006 | Page: 3\nMatching keywords: ['adult', 'health', 'mental']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: CDC_009 | Page: 3\nMatching keywords: ['cdc', 'health', 'mental', 'stres']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\nFully relevant: 0\nPartially relevant: 5\nEvidence available: True\n\n[Node 3] Generating evidence-grounded answer...\nLoading answer generation model...\nAnswer model loaded successfully.\nRaw model draft: The CDC recommends 7-9 hours of sleep per night for adults aged 18 to 60 years old.\nLong-term stress can lead to various mental health issues such as depressive disorders, anxiety disorders, post-traumatic stress disorder (PTSD), and other mental health conditions.\n\nNo supported sentences were generated.\nUnsupported statements:\n- The CDC recommends 7-9 hours of sleep per night for adults aged 18 to 60 years old.\n- Long-term stress can lead to various mental health issues such as depressive disorders, anxiety disorders, post-traumatic stress disorder (PTSD), and other mental health conditions.\nReturning exact evidence excerpts with source citations.\nAnswer generated.\n\n[Node 4] Validating answer...\n\n[Validation Debug]\nNumber of claims: 8\nAll claims supported: False\nCitations valid: False\nCitation: True | Valid: True | Claim supported: True\nCitation: False | Valid: False | Claim supported: True\nCitation: True | Valid: False | Claim supported: False\nCitation: True | Valid: True | Claim supported: True\nCitation: True | Valid: True | Claim supported: True\nCitation: True | Valid: True | Claim supported: True\nCitation: False | Valid: False | Claim supported: True\nCitation: True | Valid: False | Claim supported: True\nValidation status: NOT_SUPPORTED\nValidation notes: One or more claims lack sufficient lexical evidence or a valid citation to the cited source and page.\n\nClaim-by-claim validation:\n\nClaim 1:\nText: CDC's PLACES has local estimates on adults not getting enough sleep. [CDC_008, Page 3]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: CDC_008\nBest evidence page: 3\nHas citation: True\nValid citation: True\n\nClaim 2:\nText: Sleep Health.\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: CDC_008\nBest evidence page: 3\nHas citation: False\nValid citation: False\n\nClaim 3:\nText: 2015;1(1):40–43. [CDC_008, Page 3]\nSupported: False\nKeyword overlap: 0.0\nBest evidence source: None\nBest evidence page: None\nHas citation: True\nValid citation: False\n\nClaim 4:\nText: Paruthi S, Brooks LJ, D'Ambrosio C, et al. [CDC_008, Page 3]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: CDC_008\nBest evidence page: 3\nHas citation: True\nValid citation: True\n\nClaim 5:\nText: Recommended amount of sleep for pediatric populations: a consensus statement of the American. [CDC_008, Page 3]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: CDC_008\nBest evidence page: 3\nHas citation: True\nValid citation: True\n\nClaim 6:\nText: Watson NF, Badr MS, Belenky G, et al. [CDC_008, Page 3]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: CDC_008\nBest evidence page: 3\nHas citation: True\nValid citation: True\n\nClaim 7:\nText: Recommended amount of sleep for a healthy adult: a joint consensus statement of the American.\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: CDC_008\nBest evidence page: 3\nHas citation: False\nValid citation: False\n\nClaim 8:\nText: guidelines in the Diagnostic and Statistical Manual of Mental Disorders to diagnose mental health conditions. [CDC_008, Page 3]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: CDC_006\nBest evidence page: 4\nHas citation: True\nValid citation: False\n\nUnsupported claims: ['Sleep Health.', '2015;1(1):40–43. [CDC_008, Page 3]', 'Recommended amount of sleep for a healthy adult: a joint consensus statement of the American.', 'guidelines in the Diagnostic and Statistical Manual of Mental Disorders to diagnose mental health conditions. [CDC_008, Page 3]']\n\n[Decision] Answer validation failed. Retrying retrieval...\n\n[Corrective Retrieval] Starting...\nOriginal question: How many hours of sleep does the CDC recommend for adults aged 18 to 60, and what does the CDC say long-term stress can do to mental health?\nUnsupported claims: ['Sleep Health.', '2015;1(1):40–43. [CDC_008, Page 3]', 'Recommended amount of sleep for a healthy adult: a joint consensus statement of the American.', 'guidelines in the Diagnostic and Statistical Manual of Mental Disorders to diagnose mental health conditions. [CDC_008, Page 3]']\nCorrected query: Sleep Health 2015 1 1 40 43 Recommended amount of sleep for a healthy adult a joint consensus statement of the American guidelines in the Diagnostic and Statistical Manual of Mental Disorders to diagnose mental\nCorrective retrieval results: 5\n\n[Node 2] Assessing evidence relevance...\n\nAssessing: CDC_008 | Page: 3\nMatching keywords: ['adult', 'american', 'amount', 'consensu', 'health', 'healthy', 'joint', 'sleep', 'statement']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: CDC_008 | Page: 3\nMatching keywords: ['adult', 'disorder', 'sleep']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: CDC_008 | Page: 1\nMatching keywords: ['amount', 'health', 'healthy', 'sleep']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: CDC_008 | Page: 3\nMatching keywords: ['health', 'sleep']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: CDC_008 | Page: 2\nMatching keywords: ['disorder', 'healthy', 'sleep']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\nFully relevant: 0\nPartially relevant: 5\nEvidence available: True\n\n[Node 3] Generating evidence-grounded answer...\nRaw model draft: The CDC recommends 7-9 hours of sleep per night for adults aged 18 to 60. Long-term stress can negatively impact mental health, potentially leading to conditions such as anxiety and depression.\n\nNo supported sentences were generated.\nUnsupported statements:\n- The CDC recommends 7-9 hours of sleep per night for adults aged 18 to 60.\n- Long-term stress can negatively impact mental health, potentially leading to conditions such as anxiety and depression.\nReturning exact evidence excerpts with source citations.\nAnswer generated.\n\n[Node 4] Validating answer...\n\n[Validation Debug]\nNumber of claims: 8\nAll claims supported: False\nCitations valid: False\nCitation: True | Valid: True | Claim supported: True\nCitation: False | Valid: False | Claim supported: True\nCitation: True | Valid: False | Claim supported: False\nCitation: True | Valid: True | Claim supported: True\nCitation: True | Valid: True | Claim supported: True\nCitation: True | Valid: True | Claim supported: True\nCitation: True | Valid: True | Claim supported: True\nCitation: True | Valid: True | Claim supported: True\nValidation status: NOT_SUPPORTED\nValidation notes: One or more claims lack sufficient lexical evidence or a valid citation to the cited source and page.\n\nClaim-by-claim validation:\n\nClaim 1:\nText: CDC's PLACES has local estimates on adults not getting enough sleep. [CDC_008, Page 3]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: CDC_008\nBest evidence page: 3\nHas citation: True\nValid citation: True\n\nClaim 2:\nText: Sleep Health.\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: CDC_008\nBest evidence page: 3\nHas citation: False\nValid citation: False\n\nClaim 3:\nText: 2015;1(1):40–43. [CDC_008, Page 3]\nSupported: False\nKeyword overlap: 0.0\nBest evidence source: None\nBest evidence page: None\nHas citation: True\nValid citation: False\n\nClaim 4:\nText: Paruthi S, Brooks LJ, D'Ambrosio C, et al. [CDC_008, Page 3]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: CDC_008\nBest evidence page: 3\nHas citation: True\nValid citation: True\n\nClaim 5:\nText: Recommended amount of sleep for pediatric populations: a consensus statement of the American. [CDC_008, Page 3]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: CDC_008\nBest evidence page: 3\nHas citation: True\nValid citation: True\n\nClaim 6:\nText: Watson NF, Badr MS, Belenky G, et al. [CDC_008, Page 3]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: CDC_008\nBest evidence page: 3\nHas citation: True\nValid citation: True\n\nClaim 7:\nText: Recommended amount of sleep for a healthy adult: a joint consensus statement of the American. [CDC_008, Page 3]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: CDC_008\nBest evidence page: 3\nHas citation: True\nValid citation: True\n\nClaim 8:\nText: CDC monitors national and state trends on not getting enough sleep among:. [CDC_008, Page 3]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: CDC_008\nBest evidence page: 3\nHas citation: True\nValid citation: True\n\nUnsupported claims: ['Sleep Health.', '2015;1(1):40–43. [CDC_008, Page 3]']\n\n[Node] Unsupported claims detected.\n"
+        }
+      ],
+      "evaluation_status": "FAIL",
+      "evaluation_reason": "Initial answer cited only CDC Managing Stress page 1 and omitted the sleep part. Explicit retest retrieved CDC About Sleep and Managing Stress passages but produced citation/reference fragments and was rejected by validation.",
+      "retest_validation_status": "NOT_SUPPORTED"
+    },
+    {
+      "id": "initially_irrelevant_retrieval",
+      "question": "Does a person's blood type predict the severity of panic disorder?",
+      "status": "completed",
+      "question_classification": "IN_SCOPE",
+      "retrieved_passages": [
+        {
+          "text": "risk of suicidal thoughts and behaviours.\nThere are several different kinds of anxiety disorders, including:\ngeneralized anxiety disorder (persistent and excessive worry about daily activities or events);\npanic disorder (panic attacks and fear of continued panic attacks);\nsocial anxiety disorder (high levels of fear and worry about social situations that might make the\nperson feel humiliated, embarrassed or rejected);\nagoraphobia (excessive fear, worry and avoidance of situations that might cause a person to panic or\nfeel trapped, helpless or embarrassed);\nseparation anxiety disorder (excessive fear or worry about being separated from people with whom the\nperson has a deep emotional bond);",
+          "source_id": "WHO_002",
+          "title": "Anxiety Disorders",
+          "page": 2,
+          "chunk_index": 3,
+          "rank": 1,
+          "distance": 0.5180258750915527,
+          "relevance": "PARTIALLY_RELEVANT"
+        },
+        {
+          "text": "illness, autism spectrum disorder, an intellectual disability or other neurological condition;\npregnant adolescents, adolescent parents, or those in early or forced marriages; orphans; and\nadolescents from minority ethnic or sexual backgrounds or other discriminated groups.\nEmotional disorders\nEmotional disorders are common among adolescents. Anxiety disorders (which may involve\npanic or excessive worry) are the most prevalent in this age group and are more common\namong older than among younger adolescents. It is estimated that 4.1% of 10–14-year-olds\nand 5.3% of 15–19-year-olds experience an anxiety disorder (1). Depression is estimated to",
+          "source_id": "WHO_010",
+          "title": "Mental Health of Adolescents",
+          "page": 2,
+          "chunk_index": 4,
+          "rank": 2,
+          "distance": 0.5321094989776611,
+          "relevance": "PARTIALLY_RELEVANT"
+        },
+        {
+          "text": "Anxiety disorders\n15 September 2026 Reading time: 4 min (1206 words)|\nKey facts\nAnxiety disorders are the world’s most common mental disorders, affecting 470 million people in 2023.\nMore women are affected by anxiety disorders than men.\nSymptoms of anxiety often have onset during childhood or adolescence.\nThere are highly effective treatments for anxiety disorders.\nApproximately 1 in 4 people with anxiety disorders receive treatment for this condition.\nOverview\nEveryone can feel anxious sometimes, but people with anxiety disorders often experience fear\nand worry that is both intense and excessive. These feelings are typically accompanied by",
+          "source_id": "WHO_002",
+          "title": "Anxiety Disorders",
+          "page": 1,
+          "chunk_index": 1,
+          "rank": 3,
+          "distance": 0.5374895930290222,
+          "relevance": "IRRELEVANT"
+        },
+        {
+          "text": "disorder, about a broad range of everyday situations. They typically experience these\nsymptoms over an extended period – at least several months. Usually they avoid the situations\nthat make them anxious.\nOther symptoms of anxiety disorders may include:\ntrouble concentrating or making decisions\nfeeling irritable, tense or restless\nexperiencing nausea or abdominal distress\nhaving heart palpitations\nsweating, trembling or shaking\ntrouble sleeping\nhaving a sense of impending danger, panic or doom.\nAnxiety disorders increase the risk for depression and substance use disorders as well as the\nrisk of suicidal thoughts and behaviours.",
+          "source_id": "WHO_002",
+          "title": "Anxiety Disorders",
+          "page": 2,
+          "chunk_index": 2,
+          "rank": 4,
+          "distance": 0.5407532453536987,
+          "relevance": "PARTIALLY_RELEVANT"
+        },
+        {
+          "text": "Although highly effective treatments for anxiety disorders exist, only about 1 in 4 people in\nneed (27.6%) receive any treatment (2). Barriers to care include lack of awareness that this is a\ntreatable health condition, lack of investment in mental health services, lack of trained health-\ncare providers, and social stigma.\nSymptoms and patterns\nPeople with an anxiety disorder may experience excessive fear or worry about a specific\nsituation (for example, a panic attack or social situation) or, in the case of generalized anxiety\ndisorder, about a broad range of everyday situations. They typically experience these",
+          "source_id": "WHO_002",
+          "title": "Anxiety Disorders",
+          "page": 2,
+          "chunk_index": 1,
+          "rank": 5,
+          "distance": 0.5585421919822693,
+          "relevance": "PARTIALLY_RELEVANT"
+        }
+      ],
+      "relevant_documents": [
+        {
+          "text": "risk of suicidal thoughts and behaviours.\nThere are several different kinds of anxiety disorders, including:\ngeneralized anxiety disorder (persistent and excessive worry about daily activities or events);\npanic disorder (panic attacks and fear of continued panic attacks);\nsocial anxiety disorder (high levels of fear and worry about social situations that might make the\nperson feel humiliated, embarrassed or rejected);\nagoraphobia (excessive fear, worry and avoidance of situations that might cause a person to panic or\nfeel trapped, helpless or embarrassed);\nseparation anxiety disorder (excessive fear or worry about being separated from people with whom the\nperson has a deep emotional bond);",
+          "source_id": "WHO_002",
+          "title": "Anxiety Disorders",
+          "page": 2,
+          "chunk_index": 3,
+          "rank": 1,
+          "distance": 0.5180258750915527,
+          "relevance": "PARTIALLY_RELEVANT"
+        },
+        {
+          "text": "illness, autism spectrum disorder, an intellectual disability or other neurological condition;\npregnant adolescents, adolescent parents, or those in early or forced marriages; orphans; and\nadolescents from minority ethnic or sexual backgrounds or other discriminated groups.\nEmotional disorders\nEmotional disorders are common among adolescents. Anxiety disorders (which may involve\npanic or excessive worry) are the most prevalent in this age group and are more common\namong older than among younger adolescents. It is estimated that 4.1% of 10–14-year-olds\nand 5.3% of 15–19-year-olds experience an anxiety disorder (1). Depression is estimated to",
+          "source_id": "WHO_010",
+          "title": "Mental Health of Adolescents",
+          "page": 2,
+          "chunk_index": 4,
+          "rank": 2,
+          "distance": 0.5321094989776611,
+          "relevance": "PARTIALLY_RELEVANT"
+        },
+        {
+          "text": "disorder, about a broad range of everyday situations. They typically experience these\nsymptoms over an extended period – at least several months. Usually they avoid the situations\nthat make them anxious.\nOther symptoms of anxiety disorders may include:\ntrouble concentrating or making decisions\nfeeling irritable, tense or restless\nexperiencing nausea or abdominal distress\nhaving heart palpitations\nsweating, trembling or shaking\ntrouble sleeping\nhaving a sense of impending danger, panic or doom.\nAnxiety disorders increase the risk for depression and substance use disorders as well as the\nrisk of suicidal thoughts and behaviours.",
+          "source_id": "WHO_002",
+          "title": "Anxiety Disorders",
+          "page": 2,
+          "chunk_index": 2,
+          "rank": 4,
+          "distance": 0.5407532453536987,
+          "relevance": "PARTIALLY_RELEVANT"
+        },
+        {
+          "text": "Although highly effective treatments for anxiety disorders exist, only about 1 in 4 people in\nneed (27.6%) receive any treatment (2). Barriers to care include lack of awareness that this is a\ntreatable health condition, lack of investment in mental health services, lack of trained health-\ncare providers, and social stigma.\nSymptoms and patterns\nPeople with an anxiety disorder may experience excessive fear or worry about a specific\nsituation (for example, a panic attack or social situation) or, in the case of generalized anxiety\ndisorder, about a broad range of everyday situations. They typically experience these",
+          "source_id": "WHO_002",
+          "title": "Anxiety Disorders",
+          "page": 2,
+          "chunk_index": 1,
+          "rank": 5,
+          "distance": 0.5585421919822693,
+          "relevance": "PARTIALLY_RELEVANT"
+        }
+      ],
+      "answer": "Treatment options for panic disorder are generally effective, though access to care remains limited due to barriers like lack of awareness, inadequate mental health services, and social stigma. [WHO_002, Page 2]",
+      "final_response": "Treatment options for panic disorder are generally effective, though access to care remains limited due to barriers like lack of awareness, inadequate mental health services, and social stigma. [WHO_002, Page 2]",
+      "answer_supported": true,
+      "validation_status": "SUPPORTED",
+      "validation_notes": "All claims passed the lexical evidence and citation checks.",
+      "claim_results": [
+        {
+          "claim": "Treatment options for panic disorder are generally effective, though access to care remains limited due to barriers like lack of awareness, inadequate mental health services, and social stigma. [WHO_002, Page 2]",
+          "supported": true,
+          "keyword_overlap": 0.59,
+          "best_evidence_source": "WHO_002",
+          "best_evidence_page": 2
+        }
+      ],
+      "citation_results": [
+        {
+          "claim": "Treatment options for panic disorder are generally effective, though access to care remains limited due to barriers like lack of awareness, inadequate mental health services, and social stigma. [WHO_002, Page 2]",
+          "has_citation": true,
+          "valid_citation": true,
+          "valid_citations": [
+            {
+              "source_id": "WHO_002",
+              "page": "2"
+            }
+          ],
+          "claim_supported": true,
+          "evidence_overlap": 0.59
+        }
+      ],
+      "unsupported_claims": [],
+      "evidence_gaps": [],
+      "corrective_retrieval_attempts": 0,
+      "requires_human_review": false,
+      "human_review_status": "NOT_REQUIRED",
+      "human_review_reason": "",
+      "console_output": "\n[Node 0] Question classification: IN_SCOPE\n\n[Node 1] Retrieving evidence...\nSearch query: Does a person's blood type predict the severity of panic disorder?\nRetrieved documents: 5\n\n[Node 2] Assessing evidence relevance...\n\nAssessing: WHO_002 | Page: 2\nMatching keywords: ['disorder', 'panic', 'person']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: WHO_010 | Page: 2\nMatching keywords: ['disorder', 'panic']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: WHO_002 | Page: 1\nMatching keywords: ['disorder']\nAssessment: IRRELEVANT\n\nAssessing: WHO_002 | Page: 2\nMatching keywords: ['disorder', 'panic']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: WHO_002 | Page: 2\nMatching keywords: ['disorder', 'panic']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\nFully relevant: 0\nPartially relevant: 4\nEvidence available: True\n\n[Node 3] Generating evidence-grounded answer...\nRaw model draft: Yes, research suggests that certain factors related to blood type may influence the likelihood of developing panic disorder, but there is currently no scientific consensus supporting a direct link between blood type and the severity of panic disorder. The available evidence indicates that individuals with panic disorder often experience intense feelings of fear or worry about various everyday situations, which can lead to physical symptoms such as sweating, trembling, or difficulty breathing. Treatment options for panic disorder are generally effective, though access to care remains limited due to barriers like lack of awareness, inadequate mental health services, and social stigma.\n\nWarning: Unsupported generated statements were removed:\n- Yes, research suggests that certain factors related to blood type may influence the likelihood of developing panic disorder, but there is currently no scientific consensus supporting a direct link between blood type and the severity of panic disorder.\n- The available evidence indicates that individuals with panic disorder often experience intense feelings of fear or worry about various everyday situations, which can lead to physical symptoms such as sweating, trembling, or difficulty breathing.\nAnswer generated.\n\n[Node 4] Validating answer...\n\n[Validation Debug]\nNumber of claims: 1\nAll claims supported: True\nCitations valid: True\nCitation: True | Valid: True | Claim supported: True\nValidation status: SUPPORTED\nValidation notes: All claims passed the lexical evidence and citation checks.\n\nClaim-by-claim validation:\n\nClaim 1:\nText: Treatment options for panic disorder are generally effective, though access to care remains limited due to barriers like lack of awareness, inadequate mental health services, and social stigma. [WHO_002, Page 2]\nSupported: True\nKeyword overlap: 0.59\nBest evidence source: WHO_002\nBest evidence page: 2\nHas citation: True\nValid citation: True\n\nUnsupported claims: []\n\n[Node 5] Finalizing response...\n",
+      "additional_real_attempts": [
+        {
+          "question": "What longitude and latitude are associated with anxiety disorders?",
+          "status": "completed",
+          "question_classification": "IN_SCOPE",
+          "retrieved_passages": [
+            {
+              "text": "Anxiety disorders\n15 September 2026 Reading time: 4 min (1206 words)|\nKey facts\nAnxiety disorders are the world’s most common mental disorders, affecting 470 million people in 2023.\nMore women are affected by anxiety disorders than men.\nSymptoms of anxiety often have onset during childhood or adolescence.\nThere are highly effective treatments for anxiety disorders.\nApproximately 1 in 4 people with anxiety disorders receive treatment for this condition.\nOverview\nEveryone can feel anxious sometimes, but people with anxiety disorders often experience fear\nand worry that is both intense and excessive. These feelings are typically accompanied by",
+              "source_id": "WHO_002",
+              "title": "Anxiety Disorders",
+              "page": 1,
+              "chunk_index": 1,
+              "rank": 1,
+              "distance": 0.508979856967926,
+              "relevance": "PARTIALLY_RELEVANT"
+            },
+            {
+              "text": "and worry that is both intense and excessive. These feelings are typically accompanied by\nphysical tension and other behavioural and cognitive symptoms. They are difficult to control,\ncause significant distress and can last a long time if untreated. Anxiety disorders interfere with\ndaily activities and can impair a person’s family, social and school or working life.\nAn estimated 5.8% of the global population currently experience an anxiety disorder (1). In\n2023, 470 million people in the world had an anxiety disorder, making anxiety disorders the\nmost common of all mental disorders (1).",
+              "source_id": "WHO_002",
+              "title": "Anxiety Disorders",
+              "page": 1,
+              "chunk_index": 2,
+              "rank": 2,
+              "distance": 0.511695921421051,
+              "relevance": "PARTIALLY_RELEVANT"
+            },
+            {
+              "text": "risk of suicidal thoughts and behaviours.\nThere are several different kinds of anxiety disorders, including:\ngeneralized anxiety disorder (persistent and excessive worry about daily activities or events);\npanic disorder (panic attacks and fear of continued panic attacks);\nsocial anxiety disorder (high levels of fear and worry about social situations that might make the\nperson feel humiliated, embarrassed or rejected);\nagoraphobia (excessive fear, worry and avoidance of situations that might cause a person to panic or\nfeel trapped, helpless or embarrassed);\nseparation anxiety disorder (excessive fear or worry about being separated from people with whom the\nperson has a deep emotional bond);",
+              "source_id": "WHO_002",
+              "title": "Anxiety Disorders",
+              "page": 2,
+              "chunk_index": 3,
+              "rank": 3,
+              "distance": 0.5345197916030884,
+              "relevance": "PARTIALLY_RELEVANT"
+            },
+            {
+              "text": "disorder, about a broad range of everyday situations. They typically experience these\nsymptoms over an extended period – at least several months. Usually they avoid the situations\nthat make them anxious.\nOther symptoms of anxiety disorders may include:\ntrouble concentrating or making decisions\nfeeling irritable, tense or restless\nexperiencing nausea or abdominal distress\nhaving heart palpitations\nsweating, trembling or shaking\ntrouble sleeping\nhaving a sense of impending danger, panic or doom.\nAnxiety disorders increase the risk for depression and substance use disorders as well as the\nrisk of suicidal thoughts and behaviours.",
+              "source_id": "WHO_002",
+              "title": "Anxiety Disorders",
+              "page": 2,
+              "chunk_index": 2,
+              "rank": 4,
+              "distance": 0.5348024368286133,
+              "relevance": "PARTIALLY_RELEVANT"
+            },
+            {
+              "text": "people learn new ways of thinking, coping or relating to their anxiety, to others or to the\nworld. They can teach people how to face the situations, events, people or places that trigger\ntheir anxiety.\nPsychological interventions can be provided to individuals or groups, in person or online. They\nmay also be accessed through self-help manuals, websites and apps. The psychological\ninterventions with the most evidence for treating a range of anxiety disorders are those based\non principles of cognitive-behavioural therapy. These include exposure therapy, during which\npeople learn to face their fears.",
+              "source_id": "WHO_002",
+              "title": "Anxiety Disorders",
+              "page": 3,
+              "chunk_index": 4,
+              "rank": 5,
+              "distance": 0.5486732721328735,
+              "relevance": "PARTIALLY_RELEVANT"
+            }
+          ],
+          "relevant_documents": [
+            {
+              "text": "Anxiety disorders\n15 September 2026 Reading time: 4 min (1206 words)|\nKey facts\nAnxiety disorders are the world’s most common mental disorders, affecting 470 million people in 2023.\nMore women are affected by anxiety disorders than men.\nSymptoms of anxiety often have onset during childhood or adolescence.\nThere are highly effective treatments for anxiety disorders.\nApproximately 1 in 4 people with anxiety disorders receive treatment for this condition.\nOverview\nEveryone can feel anxious sometimes, but people with anxiety disorders often experience fear\nand worry that is both intense and excessive. These feelings are typically accompanied by",
+              "source_id": "WHO_002",
+              "title": "Anxiety Disorders",
+              "page": 1,
+              "chunk_index": 1,
+              "rank": 1,
+              "distance": 0.508979856967926,
+              "relevance": "PARTIALLY_RELEVANT"
+            },
+            {
+              "text": "and worry that is both intense and excessive. These feelings are typically accompanied by\nphysical tension and other behavioural and cognitive symptoms. They are difficult to control,\ncause significant distress and can last a long time if untreated. Anxiety disorders interfere with\ndaily activities and can impair a person’s family, social and school or working life.\nAn estimated 5.8% of the global population currently experience an anxiety disorder (1). In\n2023, 470 million people in the world had an anxiety disorder, making anxiety disorders the\nmost common of all mental disorders (1).",
+              "source_id": "WHO_002",
+              "title": "Anxiety Disorders",
+              "page": 1,
+              "chunk_index": 2,
+              "rank": 2,
+              "distance": 0.511695921421051,
+              "relevance": "PARTIALLY_RELEVANT"
+            },
+            {
+              "text": "risk of suicidal thoughts and behaviours.\nThere are several different kinds of anxiety disorders, including:\ngeneralized anxiety disorder (persistent and excessive worry about daily activities or events);\npanic disorder (panic attacks and fear of continued panic attacks);\nsocial anxiety disorder (high levels of fear and worry about social situations that might make the\nperson feel humiliated, embarrassed or rejected);\nagoraphobia (excessive fear, worry and avoidance of situations that might cause a person to panic or\nfeel trapped, helpless or embarrassed);\nseparation anxiety disorder (excessive fear or worry about being separated from people with whom the\nperson has a deep emotional bond);",
+              "source_id": "WHO_002",
+              "title": "Anxiety Disorders",
+              "page": 2,
+              "chunk_index": 3,
+              "rank": 3,
+              "distance": 0.5345197916030884,
+              "relevance": "PARTIALLY_RELEVANT"
+            },
+            {
+              "text": "disorder, about a broad range of everyday situations. They typically experience these\nsymptoms over an extended period – at least several months. Usually they avoid the situations\nthat make them anxious.\nOther symptoms of anxiety disorders may include:\ntrouble concentrating or making decisions\nfeeling irritable, tense or restless\nexperiencing nausea or abdominal distress\nhaving heart palpitations\nsweating, trembling or shaking\ntrouble sleeping\nhaving a sense of impending danger, panic or doom.\nAnxiety disorders increase the risk for depression and substance use disorders as well as the\nrisk of suicidal thoughts and behaviours.",
+              "source_id": "WHO_002",
+              "title": "Anxiety Disorders",
+              "page": 2,
+              "chunk_index": 2,
+              "rank": 4,
+              "distance": 0.5348024368286133,
+              "relevance": "PARTIALLY_RELEVANT"
+            },
+            {
+              "text": "people learn new ways of thinking, coping or relating to their anxiety, to others or to the\nworld. They can teach people how to face the situations, events, people or places that trigger\ntheir anxiety.\nPsychological interventions can be provided to individuals or groups, in person or online. They\nmay also be accessed through self-help manuals, websites and apps. The psychological\ninterventions with the most evidence for treating a range of anxiety disorders are those based\non principles of cognitive-behavioural therapy. These include exposure therapy, during which\npeople learn to face their fears.",
+              "source_id": "WHO_002",
+              "title": "Anxiety Disorders",
+              "page": 3,
+              "chunk_index": 4,
+              "rank": 5,
+              "distance": 0.5486732721328735,
+              "relevance": "PARTIALLY_RELEVANT"
+            }
+          ],
+          "answer": "Anxiety disorders. [WHO_002, Page 1]\nAnxiety disorders are the world’s most common mental disorders, affecting 470 million people in 2023. [WHO_002, Page 1]\nMore women are affected by anxiety disorders than men. [WHO_002, Page 1]\nThere are highly effective treatments for anxiety disorders. [WHO_002, Page 1]\nApproximately 1 in 4 people with anxiety disorders receive treatment for this condition. [WHO_002, Page 1]",
+          "final_response": "Anxiety disorders. [WHO_002, Page 1]\nAnxiety disorders are the world’s most common mental disorders, affecting 470 million people in 2023. [WHO_002, Page 1]\nMore women are affected by anxiety disorders than men. [WHO_002, Page 1]\nThere are highly effective treatments for anxiety disorders. [WHO_002, Page 1]\nApproximately 1 in 4 people with anxiety disorders receive treatment for this condition. [WHO_002, Page 1]",
+          "answer_supported": true,
+          "validation_status": "SUPPORTED",
+          "validation_notes": "All claims passed the lexical evidence and citation checks.",
+          "claim_results": [
+            {
+              "claim": "Anxiety disorders. [WHO_002, Page 1]",
+              "supported": true,
+              "keyword_overlap": 1.0,
+              "best_evidence_source": "WHO_002",
+              "best_evidence_page": 1
+            },
+            {
+              "claim": "Anxiety disorders are the world’s most common mental disorders, affecting 470 million people in 2023. [WHO_002, Page 1]",
+              "supported": true,
+              "keyword_overlap": 1.0,
+              "best_evidence_source": "WHO_002",
+              "best_evidence_page": 1
+            },
+            {
+              "claim": "More women are affected by anxiety disorders than men. [WHO_002, Page 1]",
+              "supported": true,
+              "keyword_overlap": 1.0,
+              "best_evidence_source": "WHO_002",
+              "best_evidence_page": 1
+            },
+            {
+              "claim": "There are highly effective treatments for anxiety disorders. [WHO_002, Page 1]",
+              "supported": true,
+              "keyword_overlap": 1.0,
+              "best_evidence_source": "WHO_002",
+              "best_evidence_page": 1
+            },
+            {
+              "claim": "Approximately 1 in 4 people with anxiety disorders receive treatment for this condition. [WHO_002, Page 1]",
+              "supported": true,
+              "keyword_overlap": 1.0,
+              "best_evidence_source": "WHO_002",
+              "best_evidence_page": 1
+            }
+          ],
+          "citation_results": [
+            {
+              "claim": "Anxiety disorders. [WHO_002, Page 1]",
+              "has_citation": true,
+              "valid_citation": true,
+              "valid_citations": [
+                {
+                  "source_id": "WHO_002",
+                  "page": "1"
+                }
+              ],
+              "claim_supported": true,
+              "evidence_overlap": 1.0
+            },
+            {
+              "claim": "Anxiety disorders are the world’s most common mental disorders, affecting 470 million people in 2023. [WHO_002, Page 1]",
+              "has_citation": true,
+              "valid_citation": true,
+              "valid_citations": [
+                {
+                  "source_id": "WHO_002",
+                  "page": "1"
+                }
+              ],
+              "claim_supported": true,
+              "evidence_overlap": 1.0
+            },
+            {
+              "claim": "More women are affected by anxiety disorders than men. [WHO_002, Page 1]",
+              "has_citation": true,
+              "valid_citation": true,
+              "valid_citations": [
+                {
+                  "source_id": "WHO_002",
+                  "page": "1"
+                }
+              ],
+              "claim_supported": true,
+              "evidence_overlap": 1.0
+            },
+            {
+              "claim": "There are highly effective treatments for anxiety disorders. [WHO_002, Page 1]",
+              "has_citation": true,
+              "valid_citation": true,
+              "valid_citations": [
+                {
+                  "source_id": "WHO_002",
+                  "page": "1"
+                }
+              ],
+              "claim_supported": true,
+              "evidence_overlap": 1.0
+            },
+            {
+              "claim": "Approximately 1 in 4 people with anxiety disorders receive treatment for this condition. [WHO_002, Page 1]",
+              "has_citation": true,
+              "valid_citation": true,
+              "valid_citations": [
+                {
+                  "source_id": "WHO_002",
+                  "page": "1"
+                }
+              ],
+              "claim_supported": true,
+              "evidence_overlap": 1.0
+            }
+          ],
+          "evidence_gaps": [],
+          "corrective_retrieval_attempts": 0,
+          "requires_human_review": false,
+          "human_review_status": "NOT_REQUIRED",
+          "console_output": "\n[Node 0] Question classification: IN_SCOPE\n\n[Node 1] Retrieving evidence...\nLoading embedding model and LangChain Chroma retriever...\nLoading Qwen relevance model...\nRelevance model loaded successfully.\nSearch query: What longitude and latitude are associated with anxiety disorders?\nRetrieved documents: 5\n\n[Node 2] Assessing evidence relevance...\n\nAssessing: WHO_002 | Page: 1\nMatching keywords: ['anxiety', 'disorder']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: WHO_002 | Page: 1\nMatching keywords: ['anxiety', 'disorder']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: WHO_002 | Page: 2\nMatching keywords: ['anxiety', 'disorder']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: WHO_002 | Page: 2\nMatching keywords: ['anxiety', 'disorder']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: WHO_002 | Page: 3\nMatching keywords: ['anxiety', 'disorder']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\nFully relevant: 0\nPartially relevant: 5\nEvidence available: True\n\n[Node 3] Generating evidence-grounded answer...\nLoading answer generation model...\nAnswer model loaded successfully.\nRaw model draft: The available evidence does not specify exact longitude and latitude coordinates associated with anxiety disorders.\n\nNo supported sentences were generated.\nUnsupported statements:\n- The available evidence does not specify exact longitude and latitude coordinates associated with anxiety disorders.\nReturning exact evidence excerpts with source citations.\nAnswer generated.\n\n[Node 4] Validating answer...\n\n[Validation Debug]\nNumber of claims: 5\nAll claims supported: True\nCitations valid: True\nCitation: True | Valid: True | Claim supported: True\nCitation: True | Valid: True | Claim supported: True\nCitation: True | Valid: True | Claim supported: True\nCitation: True | Valid: True | Claim supported: True\nCitation: True | Valid: True | Claim supported: True\nValidation status: SUPPORTED\nValidation notes: All claims passed the lexical evidence and citation checks.\n\nClaim-by-claim validation:\n\nClaim 1:\nText: Anxiety disorders. [WHO_002, Page 1]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: WHO_002\nBest evidence page: 1\nHas citation: True\nValid citation: True\n\nClaim 2:\nText: Anxiety disorders are the world’s most common mental disorders, affecting 470 million people in 2023. [WHO_002, Page 1]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: WHO_002\nBest evidence page: 1\nHas citation: True\nValid citation: True\n\nClaim 3:\nText: More women are affected by anxiety disorders than men. [WHO_002, Page 1]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: WHO_002\nBest evidence page: 1\nHas citation: True\nValid citation: True\n\nClaim 4:\nText: There are highly effective treatments for anxiety disorders. [WHO_002, Page 1]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: WHO_002\nBest evidence page: 1\nHas citation: True\nValid citation: True\n\nClaim 5:\nText: Approximately 1 in 4 people with anxiety disorders receive treatment for this condition. [WHO_002, Page 1]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: WHO_002\nBest evidence page: 1\nHas citation: True\nValid citation: True\n\nUnsupported claims: []\n\n[Node 5] Finalizing response...\n"
+        },
+        {
+          "question": "What is the latitude of anxiety?",
+          "status": "completed",
+          "question_classification": "IN_SCOPE",
+          "retrieved_passages": [
+            {
+              "text": "and worry that is both intense and excessive. These feelings are typically accompanied by\nphysical tension and other behavioural and cognitive symptoms. They are difficult to control,\ncause significant distress and can last a long time if untreated. Anxiety disorders interfere with\ndaily activities and can impair a person’s family, social and school or working life.\nAn estimated 5.8% of the global population currently experience an anxiety disorder (1). In\n2023, 470 million people in the world had an anxiety disorder, making anxiety disorders the\nmost common of all mental disorders (1).",
+              "source_id": "WHO_002",
+              "title": "Anxiety Disorders",
+              "page": 1,
+              "chunk_index": 2,
+              "rank": 1,
+              "distance": 0.5522465109825134,
+              "relevance": "IRRELEVANT"
+            },
+            {
+              "text": "disorder, about a broad range of everyday situations. They typically experience these\nsymptoms over an extended period – at least several months. Usually they avoid the situations\nthat make them anxious.\nOther symptoms of anxiety disorders may include:\ntrouble concentrating or making decisions\nfeeling irritable, tense or restless\nexperiencing nausea or abdominal distress\nhaving heart palpitations\nsweating, trembling or shaking\ntrouble sleeping\nhaving a sense of impending danger, panic or doom.\nAnxiety disorders increase the risk for depression and substance use disorders as well as the\nrisk of suicidal thoughts and behaviours.",
+              "source_id": "WHO_002",
+              "title": "Anxiety Disorders",
+              "page": 2,
+              "chunk_index": 2,
+              "rank": 2,
+              "distance": 0.5666836500167847,
+              "relevance": "IRRELEVANT"
+            },
+            {
+              "text": "Anxiety disorders\n15 September 2026 Reading time: 4 min (1206 words)|\nKey facts\nAnxiety disorders are the world’s most common mental disorders, affecting 470 million people in 2023.\nMore women are affected by anxiety disorders than men.\nSymptoms of anxiety often have onset during childhood or adolescence.\nThere are highly effective treatments for anxiety disorders.\nApproximately 1 in 4 people with anxiety disorders receive treatment for this condition.\nOverview\nEveryone can feel anxious sometimes, but people with anxiety disorders often experience fear\nand worry that is both intense and excessive. These feelings are typically accompanied by",
+              "source_id": "WHO_002",
+              "title": "Anxiety Disorders",
+              "page": 1,
+              "chunk_index": 1,
+              "rank": 3,
+              "distance": 0.5765172243118286,
+              "relevance": "IRRELEVANT"
+            },
+            {
+              "text": "people learn new ways of thinking, coping or relating to their anxiety, to others or to the\nworld. They can teach people how to face the situations, events, people or places that trigger\ntheir anxiety.\nPsychological interventions can be provided to individuals or groups, in person or online. They\nmay also be accessed through self-help manuals, websites and apps. The psychological\ninterventions with the most evidence for treating a range of anxiety disorders are those based\non principles of cognitive-behavioural therapy. These include exposure therapy, during which\npeople learn to face their fears.",
+              "source_id": "WHO_002",
+              "title": "Anxiety Disorders",
+              "page": 3,
+              "chunk_index": 4,
+              "rank": 4,
+              "distance": 0.5834915637969971,
+              "relevance": "IRRELEVANT"
+            },
+            {
+              "text": "94\nAnd ENGAGE with the world around you.\n53I\nSEE\nTASTE\nSMELL\nHEAR\nTOUCH\nNOTICE and NAME them.\n53H\nI notice here is a\npainful feeling in\nmy belly.\nI notice here is a\ndifficult thought that\nit is all too hard.\nIf so, you know what to do.\n53G\nIt is too\nhard!\nThere is\nno point!\nIt will\nnot work\nFears\nPart 3: ACTING ON YOUR VALUES",
+              "source_id": "WHO_003",
+              "title": "Doing What Matters in Times of Stress: An Illustrated Guide",
+              "page": 96,
+              "chunk_index": 1,
+              "rank": 5,
+              "distance": 0.5910516381263733,
+              "relevance": "IRRELEVANT"
+            },
+            {
+              "text": "and worry that is both intense and excessive. These feelings are typically accompanied by\nphysical tension and other behavioural and cognitive symptoms. They are difficult to control,\ncause significant distress and can last a long time if untreated. Anxiety disorders interfere with\ndaily activities and can impair a person’s family, social and school or working life.\nAn estimated 5.8% of the global population currently experience an anxiety disorder (1). In\n2023, 470 million people in the world had an anxiety disorder, making anxiety disorders the\nmost common of all mental disorders (1).",
+              "source_id": "WHO_002",
+              "title": "Anxiety Disorders",
+              "page": 1,
+              "chunk_index": 2,
+              "rank": 1,
+              "distance": 0.5522465109825134,
+              "relevance": "IRRELEVANT"
+            },
+            {
+              "text": "disorder, about a broad range of everyday situations. They typically experience these\nsymptoms over an extended period – at least several months. Usually they avoid the situations\nthat make them anxious.\nOther symptoms of anxiety disorders may include:\ntrouble concentrating or making decisions\nfeeling irritable, tense or restless\nexperiencing nausea or abdominal distress\nhaving heart palpitations\nsweating, trembling or shaking\ntrouble sleeping\nhaving a sense of impending danger, panic or doom.\nAnxiety disorders increase the risk for depression and substance use disorders as well as the\nrisk of suicidal thoughts and behaviours.",
+              "source_id": "WHO_002",
+              "title": "Anxiety Disorders",
+              "page": 2,
+              "chunk_index": 2,
+              "rank": 2,
+              "distance": 0.5666836500167847,
+              "relevance": "IRRELEVANT"
+            },
+            {
+              "text": "Anxiety disorders\n15 September 2026 Reading time: 4 min (1206 words)|\nKey facts\nAnxiety disorders are the world’s most common mental disorders, affecting 470 million people in 2023.\nMore women are affected by anxiety disorders than men.\nSymptoms of anxiety often have onset during childhood or adolescence.\nThere are highly effective treatments for anxiety disorders.\nApproximately 1 in 4 people with anxiety disorders receive treatment for this condition.\nOverview\nEveryone can feel anxious sometimes, but people with anxiety disorders often experience fear\nand worry that is both intense and excessive. These feelings are typically accompanied by",
+              "source_id": "WHO_002",
+              "title": "Anxiety Disorders",
+              "page": 1,
+              "chunk_index": 1,
+              "rank": 3,
+              "distance": 0.5765172243118286,
+              "relevance": "IRRELEVANT"
+            },
+            {
+              "text": "people learn new ways of thinking, coping or relating to their anxiety, to others or to the\nworld. They can teach people how to face the situations, events, people or places that trigger\ntheir anxiety.\nPsychological interventions can be provided to individuals or groups, in person or online. They\nmay also be accessed through self-help manuals, websites and apps. The psychological\ninterventions with the most evidence for treating a range of anxiety disorders are those based\non principles of cognitive-behavioural therapy. These include exposure therapy, during which\npeople learn to face their fears.",
+              "source_id": "WHO_002",
+              "title": "Anxiety Disorders",
+              "page": 3,
+              "chunk_index": 4,
+              "rank": 4,
+              "distance": 0.5834915637969971,
+              "relevance": "IRRELEVANT"
+            },
+            {
+              "text": "94\nAnd ENGAGE with the world around you.\n53I\nSEE\nTASTE\nSMELL\nHEAR\nTOUCH\nNOTICE and NAME them.\n53H\nI notice here is a\npainful feeling in\nmy belly.\nI notice here is a\ndifficult thought that\nit is all too hard.\nIf so, you know what to do.\n53G\nIt is too\nhard!\nThere is\nno point!\nIt will\nnot work\nFears\nPart 3: ACTING ON YOUR VALUES",
+              "source_id": "WHO_003",
+              "title": "Doing What Matters in Times of Stress: An Illustrated Guide",
+              "page": 96,
+              "chunk_index": 1,
+              "rank": 5,
+              "distance": 0.5910516381263733,
+              "relevance": "IRRELEVANT"
+            }
+          ],
+          "relevant_documents": [],
+          "answer": "I could not find sufficient evidence in the available knowledge base to answer this question. Please consult a qualified professional or a reliable source for further information.",
+          "final_response": "I could not find sufficient evidence in the available knowledge base to answer this question. Please consult a qualified professional or a reliable source for further information.",
+          "answer_supported": false,
+          "validation_status": "ABSTAINED_BEFORE_CLAIM_VALIDATION",
+          "validation_notes": "The available knowledge base did not provide sufficient evidence after corrective retrieval.",
+          "claim_results": [],
+          "citation_results": [],
+          "evidence_gaps": [
+            "The retrieved evidence did not establish an answer to: What is the latitude of anxiety?"
+          ],
+          "corrective_retrieval_attempts": 1,
+          "requires_human_review": false,
+          "human_review_status": "NOT_REQUIRED",
+          "console_output": "\n[Node 0] Question classification: IN_SCOPE\n\n[Node 1] Retrieving evidence...\nLoading embedding model and LangChain Chroma retriever...\nLoading Qwen relevance model...\nRelevance model loaded successfully.\nSearch query: What is the latitude of anxiety?\nRetrieved documents: 5\n\n[Node 2] Assessing evidence relevance...\n\nAssessing: WHO_002 | Page: 1\nMatching keywords: ['anxiety']\nAssessment: IRRELEVANT\n\nAssessing: WHO_002 | Page: 2\nMatching keywords: ['anxiety']\nAssessment: IRRELEVANT\n\nAssessing: WHO_002 | Page: 1\nMatching keywords: ['anxiety']\nAssessment: IRRELEVANT\n\nAssessing: WHO_002 | Page: 3\nMatching keywords: ['anxiety']\nAssessment: IRRELEVANT\n\nAssessing: WHO_003 | Page: 96\nMatching keywords: []\nAssessment: IRRELEVANT\nFully relevant: 0\nPartially relevant: 0\nEvidence available: False\n\n[Corrective Retrieval] Starting...\nOriginal question: What is the latitude of anxiety?\nUnsupported claims: []\nCorrected query: What is the latitude of anxiety?\nCorrective retrieval results: 5\n\n[Node 2] Assessing evidence relevance...\n\nAssessing: WHO_002 | Page: 1\nMatching keywords: ['anxiety']\nAssessment: IRRELEVANT\n\nAssessing: WHO_002 | Page: 2\nMatching keywords: ['anxiety']\nAssessment: IRRELEVANT\n\nAssessing: WHO_002 | Page: 1\nMatching keywords: ['anxiety']\nAssessment: IRRELEVANT\n\nAssessing: WHO_002 | Page: 3\nMatching keywords: ['anxiety']\nAssessment: IRRELEVANT\n\nAssessing: WHO_003 | Page: 96\nMatching keywords: []\nAssessment: IRRELEVANT\nFully relevant: 0\nPartially relevant: 0\nEvidence available: False\n\n[Node] Insufficient evidence. Abstaining.\n"
+        }
+      ],
+      "evaluation_status": "PARTIAL",
+      "evaluation_reason": "Blood-type and longitude probes were accepted without retry and produced nonresponsive answers. The actual corrective path was exercised with the latitude question: all five first-pass assessments and all five second-pass assessments were IRRELEVANT and identical; the agent then abstained. Retry/abstention executed, but retrieval did not improve."
+    },
+    {
+      "id": "insufficient_pakistan_anxiety_prevalence",
+      "question": "What percentage of people in Pakistan have an anxiety disorder?",
+      "status": "completed",
+      "question_classification": "IN_SCOPE",
+      "retrieved_passages": [
+        {
+          "text": "Anxiety disorders\n15 September 2026 Reading time: 4 min (1206 words)|\nKey facts\nAnxiety disorders are the world’s most common mental disorders, affecting 470 million people in 2023.\nMore women are affected by anxiety disorders than men.\nSymptoms of anxiety often have onset during childhood or adolescence.\nThere are highly effective treatments for anxiety disorders.\nApproximately 1 in 4 people with anxiety disorders receive treatment for this condition.\nOverview\nEveryone can feel anxious sometimes, but people with anxiety disorders often experience fear\nand worry that is both intense and excessive. These feelings are typically accompanied by",
+          "source_id": "WHO_002",
+          "title": "Anxiety Disorders",
+          "page": 1,
+          "chunk_index": 1,
+          "rank": 1,
+          "distance": 0.37961065769195557,
+          "relevance": "PARTIALLY_RELEVANT"
+        },
+        {
+          "text": "Although highly effective treatments for anxiety disorders exist, only about 1 in 4 people in\nneed (27.6%) receive any treatment (2). Barriers to care include lack of awareness that this is a\ntreatable health condition, lack of investment in mental health services, lack of trained health-\ncare providers, and social stigma.\nSymptoms and patterns\nPeople with an anxiety disorder may experience excessive fear or worry about a specific\nsituation (for example, a panic attack or social situation) or, in the case of generalized anxiety\ndisorder, about a broad range of everyday situations. They typically experience these",
+          "source_id": "WHO_002",
+          "title": "Anxiety Disorders",
+          "page": 2,
+          "chunk_index": 1,
+          "rank": 2,
+          "distance": 0.3990921974182129,
+          "relevance": "PARTIALLY_RELEVANT"
+        },
+        {
+          "text": "and worry that is both intense and excessive. These feelings are typically accompanied by\nphysical tension and other behavioural and cognitive symptoms. They are difficult to control,\ncause significant distress and can last a long time if untreated. Anxiety disorders interfere with\ndaily activities and can impair a person’s family, social and school or working life.\nAn estimated 5.8% of the global population currently experience an anxiety disorder (1). In\n2023, 470 million people in the world had an anxiety disorder, making anxiety disorders the\nmost common of all mental disorders (1).",
+          "source_id": "WHO_002",
+          "title": "Anxiety Disorders",
+          "page": 1,
+          "chunk_index": 2,
+          "rank": 3,
+          "distance": 0.4314541816711426,
+          "relevance": "RELEVANT"
+        },
+        {
+          "text": "illness, autism spectrum disorder, an intellectual disability or other neurological condition;\npregnant adolescents, adolescent parents, or those in early or forced marriages; orphans; and\nadolescents from minority ethnic or sexual backgrounds or other discriminated groups.\nEmotional disorders\nEmotional disorders are common among adolescents. Anxiety disorders (which may involve\npanic or excessive worry) are the most prevalent in this age group and are more common\namong older than among younger adolescents. It is estimated that 4.1% of 10–14-year-olds\nand 5.3% of 15–19-year-olds experience an anxiety disorder (1). Depression is estimated to",
+          "source_id": "WHO_010",
+          "title": "Mental Health of Adolescents",
+          "page": 2,
+          "chunk_index": 4,
+          "rank": 4,
+          "distance": 0.43328726291656494,
+          "relevance": "PARTIALLY_RELEVANT"
+        },
+        {
+          "text": "and 5.3% of 15–19-year-olds experience an anxiety disorder (1). Depression is estimated to\noccur among 1.3% of adolescents aged 10–14 years, and 3.4% of 15–19-year-olds (1).\nDepression and anxiety share some of the same symptoms, including rapid and unexpected\nchanges in mood.",
+          "source_id": "WHO_010",
+          "title": "Mental Health of Adolescents",
+          "page": 2,
+          "chunk_index": 5,
+          "rank": 5,
+          "distance": 0.47023022174835205,
+          "relevance": "PARTIALLY_RELEVANT"
+        }
+      ],
+      "relevant_documents": [
+        {
+          "text": "and worry that is both intense and excessive. These feelings are typically accompanied by\nphysical tension and other behavioural and cognitive symptoms. They are difficult to control,\ncause significant distress and can last a long time if untreated. Anxiety disorders interfere with\ndaily activities and can impair a person’s family, social and school or working life.\nAn estimated 5.8% of the global population currently experience an anxiety disorder (1). In\n2023, 470 million people in the world had an anxiety disorder, making anxiety disorders the\nmost common of all mental disorders (1).",
+          "source_id": "WHO_002",
+          "title": "Anxiety Disorders",
+          "page": 1,
+          "chunk_index": 2,
+          "rank": 3,
+          "distance": 0.4314541816711426,
+          "relevance": "RELEVANT"
+        }
+      ],
+      "answer": "cause significant distress and can last a long time if untreated. [WHO_002, Page 1]\nAnxiety disorders interfere with. [WHO_002, Page 1]\nAn estimated 5.8% of the global population currently experience an anxiety disorder (1). [WHO_002, Page 1]\n, 470 million people in the world had an anxiety disorder, making anxiety disorders the. [WHO_002, Page 1]",
+      "final_response": "cause significant distress and can last a long time if untreated. [WHO_002, Page 1]\nAnxiety disorders interfere with. [WHO_002, Page 1]\nAn estimated 5.8% of the global population currently experience an anxiety disorder (1). [WHO_002, Page 1]\n, 470 million people in the world had an anxiety disorder, making anxiety disorders the. [WHO_002, Page 1]",
+      "answer_supported": true,
+      "validation_status": "SUPPORTED",
+      "validation_notes": "All claims passed the lexical evidence and citation checks.",
+      "claim_results": [
+        {
+          "claim": "cause significant distress and can last a long time if untreated. [WHO_002, Page 1]",
+          "supported": true,
+          "keyword_overlap": 1.0,
+          "best_evidence_source": "WHO_002",
+          "best_evidence_page": 1
+        },
+        {
+          "claim": "Anxiety disorders interfere with. [WHO_002, Page 1]",
+          "supported": true,
+          "keyword_overlap": 1.0,
+          "best_evidence_source": "WHO_002",
+          "best_evidence_page": 1
+        },
+        {
+          "claim": "An estimated 5.8% of the global population currently experience an anxiety disorder (1). [WHO_002, Page 1]",
+          "supported": true,
+          "keyword_overlap": 1.0,
+          "best_evidence_source": "WHO_002",
+          "best_evidence_page": 1
+        },
+        {
+          "claim": ", 470 million people in the world had an anxiety disorder, making anxiety disorders the. [WHO_002, Page 1]",
+          "supported": true,
+          "keyword_overlap": 1.0,
+          "best_evidence_source": "WHO_002",
+          "best_evidence_page": 1
+        }
+      ],
+      "citation_results": [
+        {
+          "claim": "cause significant distress and can last a long time if untreated. [WHO_002, Page 1]",
+          "has_citation": true,
+          "valid_citation": true,
+          "valid_citations": [
+            {
+              "source_id": "WHO_002",
+              "page": "1"
+            }
+          ],
+          "claim_supported": true,
+          "evidence_overlap": 1.0
+        },
+        {
+          "claim": "Anxiety disorders interfere with. [WHO_002, Page 1]",
+          "has_citation": true,
+          "valid_citation": true,
+          "valid_citations": [
+            {
+              "source_id": "WHO_002",
+              "page": "1"
+            }
+          ],
+          "claim_supported": true,
+          "evidence_overlap": 1.0
+        },
+        {
+          "claim": "An estimated 5.8% of the global population currently experience an anxiety disorder (1). [WHO_002, Page 1]",
+          "has_citation": true,
+          "valid_citation": true,
+          "valid_citations": [
+            {
+              "source_id": "WHO_002",
+              "page": "1"
+            }
+          ],
+          "claim_supported": true,
+          "evidence_overlap": 1.0
+        },
+        {
+          "claim": ", 470 million people in the world had an anxiety disorder, making anxiety disorders the. [WHO_002, Page 1]",
+          "has_citation": true,
+          "valid_citation": true,
+          "valid_citations": [
+            {
+              "source_id": "WHO_002",
+              "page": "1"
+            }
+          ],
+          "claim_supported": true,
+          "evidence_overlap": 1.0
+        }
+      ],
+      "unsupported_claims": [],
+      "evidence_gaps": [],
+      "corrective_retrieval_attempts": 0,
+      "requires_human_review": false,
+      "human_review_status": "NOT_REQUIRED",
+      "human_review_reason": "",
+      "console_output": "\n[Node 0] Question classification: IN_SCOPE\n\n[Node 1] Retrieving evidence...\nSearch query: What percentage of people in Pakistan have an anxiety disorder?\nRetrieved documents: 5\n\n[Node 2] Assessing evidence relevance...\n\nAssessing: WHO_002 | Page: 1\nMatching keywords: ['anxiety', 'disorder', 'people']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: WHO_002 | Page: 2\nMatching keywords: ['anxiety', 'disorder', 'people']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: WHO_002 | Page: 1\nMatching keywords: ['anxiety', 'disorder', 'people']\nAssessment: RELEVANT\n\nAssessing: WHO_010 | Page: 2\nMatching keywords: ['anxiety', 'disorder']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\n\nAssessing: WHO_010 | Page: 2\nMatching keywords: ['anxiety', 'disorder']\nQwen rejected the passage, but keyword overlap suggests possible partial relevance.\nAssessment: PARTIALLY_RELEVANT\nFully relevant: 1\nPartially relevant: 4\nEvidence available: True\n\n[Node 3] Generating evidence-grounded answer...\nRaw model draft: The available evidence indicates that approximately 5.8% of the global population experiences an anxiety disorder according to WHO data from 2023.\n\nNo supported sentences were generated.\nUnsupported statements:\n- The available evidence indicates that approximately 5.8% of the global population experiences an anxiety disorder according to WHO data from 2023.\nReturning exact evidence excerpts with source citations.\nAnswer generated.\n\n[Node 4] Validating answer...\n\n[Validation Debug]\nNumber of claims: 4\nAll claims supported: True\nCitations valid: True\nCitation: True | Valid: True | Claim supported: True\nCitation: True | Valid: True | Claim supported: True\nCitation: True | Valid: True | Claim supported: True\nCitation: True | Valid: True | Claim supported: True\nValidation status: SUPPORTED\nValidation notes: All claims passed the lexical evidence and citation checks.\n\nClaim-by-claim validation:\n\nClaim 1:\nText: cause significant distress and can last a long time if untreated. [WHO_002, Page 1]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: WHO_002\nBest evidence page: 1\nHas citation: True\nValid citation: True\n\nClaim 2:\nText: Anxiety disorders interfere with. [WHO_002, Page 1]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: WHO_002\nBest evidence page: 1\nHas citation: True\nValid citation: True\n\nClaim 3:\nText: An estimated 5.8% of the global population currently experience an anxiety disorder (1). [WHO_002, Page 1]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: WHO_002\nBest evidence page: 1\nHas citation: True\nValid citation: True\n\nClaim 4:\nText: , 470 million people in the world had an anxiety disorder, making anxiety disorders the. [WHO_002, Page 1]\nSupported: True\nKeyword overlap: 1.0\nBest evidence source: WHO_002\nBest evidence page: 1\nHas citation: True\nValid citation: True\n\nUnsupported claims: []\n\n[Node 5] Finalizing response...\n",
+      "evaluation_status": "FAIL",
+      "evaluation_reason": "The agent classified the question IN_SCOPE but returned the global 5.8% and 470 million figures, marked them SUPPORTED, and did not state that Pakistan-specific prevalence was unavailable."
+    },
+    {
+      "id": "out_of_scope",
+      "question": "What is the current population of Islamabad?",
+      "status": "completed",
+      "question_classification": "OUT_OF_SCOPE",
+      "retrieved_passages": [],
+      "relevant_documents": [],
+      "answer": "",
+      "final_response": "This question is outside the mental health education topics covered by the available knowledge base.",
+      "answer_supported": false,
+      "validation_status": "NOT_RUN",
+      "validation_notes": "",
+      "claim_results": [],
+      "citation_results": [],
+      "unsupported_claims": [],
+      "evidence_gaps": [],
+      "corrective_retrieval_attempts": 0,
+      "requires_human_review": false,
+      "human_review_status": "NOT_REQUIRED",
+      "human_review_reason": "",
+      "console_output": "\n[Node 0] Question classification: OUT_OF_SCOPE\n",
+      "evaluation_status": "PASS",
+      "evaluation_reason": "Classified OUT_OF_SCOPE; no passages were retrieved; returned the scope refusal; no human review was required."
+    }
+  ],
+  "updated_at_utc": "2026-11-13T07:58:03.754232+00:00",
+  "completed_at_utc": "2026-11-13T07:59:51.035975+00:00",
+  "evaluation_summary": [
+    {
+      "scenario": "Relevant stress-management question",
+      "status": "PASS",
+      "question": "What evidence-based steps can help people manage stress in daily life?",
+      "reason": "IN_SCOPE; CDC Managing Stress page 1 supported all four answer claims; all citations validated."
+    },
+    {
+      "scenario": "Multiple-source sleep and stress question",
+      "status": "FAIL",
+      "question": "How can adequate sleep support emotional well-being, and what effects can long-term stress have on mental health?",
+      "reason": "Initial answer cited only CDC Managing Stress page 1 and omitted the sleep part. Explicit retest retrieved CDC About Sleep and Managing Stress passages but produced citation/reference fragments and was rejected by validation."
+    },
+    {
+      "scenario": "Initially irrelevant retrieval",
+      "status": "PARTIAL",
+      "question": "What is the latitude of anxiety?",
+      "reason": "Blood-type and longitude probes were accepted without retry and produced nonresponsive answers. The actual corrective path was exercised with the latitude question: all five first-pass assessments and all five second-pass assessments were IRRELEVANT and identical; the agent then abstained. Retry/abstention executed, but retrieval did not improve."
+    },
+    {
+      "scenario": "Pakistan-specific anxiety prevalence",
+      "status": "FAIL",
+      "question": "What percentage of people in Pakistan have an anxiety disorder?",
+      "reason": "The agent classified the question IN_SCOPE but returned the global 5.8% and 470 million figures, marked them SUPPORTED, and did not state that Pakistan-specific prevalence was unavailable."
+    },
+    {
+      "scenario": "Out-of-scope question",
+      "status": "PASS",
+      "question": "What is the current population of Islamabad?",
+      "reason": "Classified OUT_OF_SCOPE; no passages were retrieved; returned the scope refusal; no human review was required."
+    }
+  ]
+}

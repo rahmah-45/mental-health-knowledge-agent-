@@ -1,0 +1,82 @@
+[
+    {
+        "source_id": "WHO_001",
+        "filename": "WHO_01_Mental_Health.pdf",
+        "output_file": "WHO_01_Mental_Health.txt",
+        "status": "processed",
+        "pages": 4,
+        "characters": 7275
+    },
+    {
+        "source_id": "WHO_002",
+        "filename": "WHO_02_Anxiety_Disorders.pdf",
+        "output_file": "WHO_02_Anxiety_Disorders.txt",
+        "status": "processed",
+        "pages": 5,
+        "characters": 8371
+    },
+    {
+        "source_id": "WHO_003",
+        "filename": "WHO_03_Stress_Management_Guide.pdf",
+        "output_file": "WHO_03_Stress_Management_Guide.txt",
+        "status": "processed",
+        "pages": 132,
+        "characters": 61018
+    },
+    {
+        "source_id": "NHS_004",
+        "filename": "NHS_04_Five_Steps_Mental_Wellbeing.pdf",
+        "output_file": "NHS_04_Five_Steps_Mental_Wellbeing.txt",
+        "status": "processed",
+        "pages": 5,
+        "characters": 5983
+    },
+    {
+        "source_id": "NIMH_005",
+        "filename": "NIMH_05_Depression.pdf",
+        "output_file": "NIMH_05_Depression.txt",
+        "status": "processed",
+        "pages": 3,
+        "characters": 5391
+    },
+    {
+        "source_id": "CDC_006",
+        "filename": "CDC_06_About_Mental_Health.pdf",
+        "output_file": "CDC_06_About_Mental_Health.txt",
+        "status": "processed",
+        "pages": 5,
+        "characters": 12372
+    },
+    {
+        "source_id": "WHO_007",
+        "filename": "WHO_07_Psychological_First_Aid.pdf",
+        "output_file": "WHO_07_Psychological_First_Aid.txt",
+        "status": "processed",
+        "pages": 64,
+        "characters": 83314
+    },
+    {
+        "source_id": "CDC_008",
+        "filename": "CDC_08_About_Sleep.pdf",
+        "output_file": "CDC_08_About_Sleep.txt",
+        "status": "processed",
+        "pages": 3,
+        "characters": 4023
+    },
+    {
+        "source_id": "CDC_009",
+        "filename": "CDC_09_Managing_Stress.pdf",
+        "output_file": "CDC_09_Managing_Stress.txt",
+        "status": "processed",
+        "pages": 3,
+        "characters": 5194
+    },
+    {
+        "source_id": "WHO_010",
+        "filename": "WHO_10_Adolescent_Mental_Health.pdf",
+        "output_file": "WHO_10_Adolescent_Mental_Health.txt",
+        "status": "processed",
+        "pages": 6,
+        "characters": 10004
+    }
+]
